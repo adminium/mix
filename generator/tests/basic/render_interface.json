@@ -1,0 +1,482 @@
+{
+	"Name": "BasicAPI",
+	"Methods": [
+		{
+			"Name": "Test1",
+			"Request": {
+				"Field": "Test1Request",
+				"Type": "struct",
+				"Use": {
+					"Name": "Basic",
+					"Type": "struct",
+					"StructFields": [
+						{
+							"Field": "Int",
+							"Type": "int"
+						},
+						{
+							"Type": "uint",
+							"Pointer": true
+						},
+						{
+							"Field": "Bool",
+							"Type": "bool"
+						},
+						{
+							"Type": "float32",
+							"Pointer": true
+						},
+						{
+							"Field": "String",
+							"Type": "string"
+						},
+						{
+							"Field": "Map",
+							"Type": "map"
+						},
+						{
+							"Field": "IntArray",
+							"Json": "int_array",
+							"Type": "slice",
+							"Elem": {
+								"Type": "int"
+							},
+							"Tags": "json:\"int_array\""
+						},
+						{
+							"Field": "UintArray",
+							"Json": "uint_array",
+							"Type": "slice",
+							"Elem": {
+								"Type": "uint",
+								"Pointer": true
+							},
+							"Tags": "json:\"uint_array\""
+						},
+						{
+							"Field": "BoolArray",
+							"Json": "bool_array",
+							"Type": "slice",
+							"Elem": {
+								"Type": "bool"
+							},
+							"Tags": "json:\"bool_array\""
+						},
+						{
+							"Field": "FloatArray",
+							"Json": "float_array",
+							"Type": "slice",
+							"Elem": {
+								"Type": "float32",
+								"Pointer": true
+							},
+							"Tags": "json:\"float_array\""
+						},
+						{
+							"Field": "StringArray",
+							"Json": "string_array",
+							"Type": "slice",
+							"Elem": {
+								"Type": "string"
+							},
+							"Tags": "json:\"string_array\""
+						},
+						{
+							"Field": "StringArrayArray",
+							"Json": "string_array_array",
+							"Type": "slice",
+							"Elem": {
+								"Type": "slice",
+								"Elem": {
+									"Type": "string"
+								}
+							},
+							"Tags": "json:\"string_array_array\""
+						}
+					]
+				}
+			},
+			"Replay": {
+				"Field": "Test1Replay",
+				"Type": "struct",
+				"Use": {
+					"Name": "Basic",
+					"Type": "struct",
+					"StructFields": [
+						{
+							"Field": "Int",
+							"Type": "int"
+						},
+						{
+							"Type": "uint",
+							"Pointer": true
+						},
+						{
+							"Field": "Bool",
+							"Type": "bool"
+						},
+						{
+							"Type": "float32",
+							"Pointer": true
+						},
+						{
+							"Field": "String",
+							"Type": "string"
+						},
+						{
+							"Field": "Map",
+							"Type": "map"
+						},
+						{
+							"Field": "IntArray",
+							"Json": "int_array",
+							"Type": "slice",
+							"Elem": {
+								"Type": "int"
+							},
+							"Tags": "json:\"int_array\""
+						},
+						{
+							"Field": "UintArray",
+							"Json": "uint_array",
+							"Type": "slice",
+							"Elem": {
+								"Type": "uint",
+								"Pointer": true
+							},
+							"Tags": "json:\"uint_array\""
+						},
+						{
+							"Field": "BoolArray",
+							"Json": "bool_array",
+							"Type": "slice",
+							"Elem": {
+								"Type": "bool"
+							},
+							"Tags": "json:\"bool_array\""
+						},
+						{
+							"Field": "FloatArray",
+							"Json": "float_array",
+							"Type": "slice",
+							"Elem": {
+								"Type": "float32",
+								"Pointer": true
+							},
+							"Tags": "json:\"float_array\""
+						},
+						{
+							"Field": "StringArray",
+							"Json": "string_array",
+							"Type": "slice",
+							"Elem": {
+								"Type": "string"
+							},
+							"Tags": "json:\"string_array\""
+						},
+						{
+							"Field": "StringArrayArray",
+							"Json": "string_array_array",
+							"Type": "slice",
+							"Elem": {
+								"Type": "slice",
+								"Elem": {
+									"Type": "string"
+								}
+							},
+							"Tags": "json:\"string_array_array\""
+						}
+					]
+				}
+			}
+		},
+		{
+			"Name": "Test2",
+			"Request": {
+				"Field": "Test2Request",
+				"Type": "struct",
+				"StructFields": [
+					{
+						"Field": "P1",
+						"Json": "p1",
+						"Type": "struct",
+						"Pointer": true,
+						"StructFields": [
+							{
+								"Field": "Int",
+								"Type": "int"
+							},
+							{
+								"Type": "uint",
+								"Pointer": true
+							},
+							{
+								"Field": "Bool",
+								"Type": "bool"
+							},
+							{
+								"Type": "float32",
+								"Pointer": true
+							},
+							{
+								"Field": "String",
+								"Type": "string"
+							},
+							{
+								"Field": "Map",
+								"Type": "map"
+							},
+							{
+								"Field": "IntArray",
+								"Json": "int_array",
+								"Type": "slice",
+								"Elem": {
+									"Type": "int"
+								},
+								"Tags": "json:\"int_array\""
+							},
+							{
+								"Field": "UintArray",
+								"Json": "uint_array",
+								"Type": "slice",
+								"Elem": {
+									"Type": "uint",
+									"Pointer": true
+								},
+								"Tags": "json:\"uint_array\""
+							},
+							{
+								"Field": "BoolArray",
+								"Json": "bool_array",
+								"Type": "slice",
+								"Elem": {
+									"Type": "bool"
+								},
+								"Tags": "json:\"bool_array\""
+							},
+							{
+								"Field": "FloatArray",
+								"Json": "float_array",
+								"Type": "slice",
+								"Elem": {
+									"Type": "float32",
+									"Pointer": true
+								},
+								"Tags": "json:\"float_array\""
+							},
+							{
+								"Field": "StringArray",
+								"Json": "string_array",
+								"Type": "slice",
+								"Elem": {
+									"Type": "string"
+								},
+								"Tags": "json:\"string_array\""
+							},
+							{
+								"Field": "StringArrayArray",
+								"Json": "string_array_array",
+								"Type": "slice",
+								"Elem": {
+									"Type": "slice",
+									"Elem": {
+										"Type": "string"
+									}
+								},
+								"Tags": "json:\"string_array_array\""
+							}
+						]
+					}
+				]
+			},
+			"Replay": {
+				"Field": "Test2Replay",
+				"Type": "struct",
+				"StructFields": [
+					{
+						"Field": "R0",
+						"Json": "r0",
+						"Type": "struct",
+						"Pointer": true,
+						"StructFields": [
+							{
+								"Field": "Int",
+								"Type": "int"
+							},
+							{
+								"Type": "uint",
+								"Pointer": true
+							},
+							{
+								"Field": "Bool",
+								"Type": "bool"
+							},
+							{
+								"Type": "float32",
+								"Pointer": true
+							},
+							{
+								"Field": "String",
+								"Type": "string"
+							},
+							{
+								"Field": "Map",
+								"Type": "map"
+							},
+							{
+								"Field": "IntArray",
+								"Json": "int_array",
+								"Type": "slice",
+								"Elem": {
+									"Type": "int"
+								},
+								"Tags": "json:\"int_array\""
+							},
+							{
+								"Field": "UintArray",
+								"Json": "uint_array",
+								"Type": "slice",
+								"Elem": {
+									"Type": "uint",
+									"Pointer": true
+								},
+								"Tags": "json:\"uint_array\""
+							},
+							{
+								"Field": "BoolArray",
+								"Json": "bool_array",
+								"Type": "slice",
+								"Elem": {
+									"Type": "bool"
+								},
+								"Tags": "json:\"bool_array\""
+							},
+							{
+								"Field": "FloatArray",
+								"Json": "float_array",
+								"Type": "slice",
+								"Elem": {
+									"Type": "float32",
+									"Pointer": true
+								},
+								"Tags": "json:\"float_array\""
+							},
+							{
+								"Field": "StringArray",
+								"Json": "string_array",
+								"Type": "slice",
+								"Elem": {
+									"Type": "string"
+								},
+								"Tags": "json:\"string_array\""
+							},
+							{
+								"Field": "StringArrayArray",
+								"Json": "string_array_array",
+								"Type": "slice",
+								"Elem": {
+									"Type": "slice",
+									"Elem": {
+										"Type": "string"
+									}
+								},
+								"Tags": "json:\"string_array_array\""
+							}
+						]
+					}
+				]
+			}
+		}
+	],
+	"Defs": [
+		{
+			"Name": "Basic",
+			"Type": "struct",
+			"StructFields": [
+				{
+					"Field": "Int",
+					"Type": "int"
+				},
+				{
+					"Type": "uint",
+					"Pointer": true
+				},
+				{
+					"Field": "Bool",
+					"Type": "bool"
+				},
+				{
+					"Type": "float32",
+					"Pointer": true
+				},
+				{
+					"Field": "String",
+					"Type": "string"
+				},
+				{
+					"Field": "Map",
+					"Type": "map"
+				},
+				{
+					"Field": "IntArray",
+					"Json": "int_array",
+					"Type": "slice",
+					"Elem": {
+						"Type": "int"
+					},
+					"Tags": "json:\"int_array\""
+				},
+				{
+					"Field": "UintArray",
+					"Json": "uint_array",
+					"Type": "slice",
+					"Elem": {
+						"Type": "uint",
+						"Pointer": true
+					},
+					"Tags": "json:\"uint_array\""
+				},
+				{
+					"Field": "BoolArray",
+					"Json": "bool_array",
+					"Type": "slice",
+					"Elem": {
+						"Type": "bool"
+					},
+					"Tags": "json:\"bool_array\""
+				},
+				{
+					"Field": "FloatArray",
+					"Json": "float_array",
+					"Type": "slice",
+					"Elem": {
+						"Type": "float32",
+						"Pointer": true
+					},
+					"Tags": "json:\"float_array\""
+				},
+				{
+					"Field": "StringArray",
+					"Json": "string_array",
+					"Type": "slice",
+					"Elem": {
+						"Type": "string"
+					},
+					"Tags": "json:\"string_array\""
+				},
+				{
+					"Field": "StringArrayArray",
+					"Json": "string_array_array",
+					"Type": "slice",
+					"Elem": {
+						"Type": "slice",
+						"Elem": {
+							"Type": "string"
+						}
+					},
+					"Tags": "json:\"string_array_array\""
+				}
+			]
+		}
+	]
+}

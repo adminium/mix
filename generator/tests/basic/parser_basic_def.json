@@ -1,0 +1,96 @@
+{
+  "Name": "Basic",
+  "Used": true,
+  "Type": {
+    "Type": "struct",
+    "StructFields": [
+      {
+        "Type": "int",
+        "Field": "Int"
+      },
+      {
+        "Pointer": true,
+        "Real": {
+          "Type": "uint"
+        },
+        "Field": "Uint"
+      },
+      {
+        "Type": "bool",
+        "Field": "Bool"
+      },
+      {
+        "Pointer": true,
+        "Real": {
+          "Type": "float32"
+        },
+        "Field": "Float"
+      },
+      {
+        "Type": "string",
+        "Field": "String"
+      },
+      {
+        "Type": "map",
+        "Field": "Map"
+      },
+      {
+        "Type": "array",
+        "Elem": {
+          "Type": "int"
+        },
+        "Tags": "json:\"int_array\"",
+        "Field": "IntArray"
+      },
+      {
+        "Type": "array",
+        "Elem": {
+          "Pointer": true,
+          "Real": {
+            "Type": "uint"
+          }
+        },
+        "Tags": "json:\"uint_array\"",
+        "Field": "UintArray"
+      },
+      {
+        "Type": "array",
+        "Elem": {
+          "Type": "bool"
+        },
+        "Tags": "json:\"bool_array\"",
+        "Field": "BoolArray"
+      },
+      {
+        "Type": "array",
+        "Elem": {
+          "Pointer": true,
+          "Real": {
+            "Type": "float32"
+          }
+        },
+        "Tags": "json:\"float_array\"",
+        "Field": "FloatArray"
+      },
+      {
+        "Type": "array",
+        "Elem": {
+          "Type": "string"
+        },
+        "Tags": "json:\"string_array\"",
+        "Field": "StringArray"
+      },
+      {
+        "Type": "array",
+        "Elem": {
+          "Type": "array",
+          "Elem": {
+            "Type": "string"
+          }
+        },
+        "Tags": "json:\"string_array_array\"",
+        "Field": "StringArrayArray"
+      }
+    ]
+  }
+}

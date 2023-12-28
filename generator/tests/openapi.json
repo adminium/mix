@@ -1,0 +1,4827 @@
+{
+  "components": {
+    "requestBodies": {
+      "BoolArrayPointerRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "items": {
+                    "type": "boolean"
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "BoolArrayRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "items": {
+                    "type": "boolean"
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "BoolPointerRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "type": "boolean"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "BoolRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "type": "boolean"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "BoolStructPointerRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "properties": {
+                    "": {
+                      "type": "boolean"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "BoolStructRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Bool"
+            }
+          }
+        }
+      },
+      "DecimalArrayPointerRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "DecimalArrayRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "DecimalPinterRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "DecimalRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "DecimalShadowPointerRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "DecimalShadowRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "FloatArrayPointerRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "items": {
+                    "type": "number"
+                  },
+                  "type": "array"
+                },
+                "p2": {
+                  "items": {
+                    "type": "number"
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "FloatArrayRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "items": {
+                    "type": "number"
+                  },
+                  "type": "array"
+                },
+                "p2": {
+                  "items": {
+                    "type": "number"
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "FloatPointerRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "type": "number"
+                },
+                "p2": {
+                  "type": "number"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "FloatRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "type": "number"
+                },
+                "p2": {
+                  "type": "number"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "FloatStructPointerRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "properties": {
+                    "": {
+                      "type": "number"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "FloatStructRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Float"
+            }
+          }
+        }
+      },
+      "IntArrayPointerRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "items": {
+                    "type": "integer"
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "IntArrayRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "items": {
+                    "type": "integer"
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "IntPointerRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "type": "integer"
+                },
+                "p2": {
+                  "type": "integer"
+                },
+                "p3": {
+                  "type": "integer"
+                },
+                "p4": {
+                  "type": "integer"
+                },
+                "p5": {
+                  "type": "integer"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "IntRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "type": "integer"
+                },
+                "p2": {
+                  "type": "integer"
+                },
+                "p3": {
+                  "type": "integer"
+                },
+                "p4": {
+                  "type": "integer"
+                },
+                "p5": {
+                  "type": "integer"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "IntStructArrayRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "items": {
+                    "properties": {
+                      "Int": {
+                        "type": "integer"
+                      },
+                      "Int16": {
+                        "type": "integer"
+                      },
+                      "Int16Array": {
+                        "items": {
+                          "type": "integer"
+                        },
+                        "type": "array"
+                      },
+                      "Int16ArrayArray": {
+                        "items": {
+                          "items": {
+                            "type": "integer"
+                          },
+                          "type": "array"
+                        },
+                        "type": "array"
+                      },
+                      "Int32": {
+                        "type": "integer"
+                      },
+                      "Int32Array": {
+                        "items": {
+                          "type": "integer"
+                        },
+                        "type": "array"
+                      },
+                      "Int32ArrayArray": {
+                        "items": {
+                          "items": {
+                            "type": "integer"
+                          },
+                          "type": "array"
+                        },
+                        "type": "array"
+                      },
+                      "Int64": {
+                        "type": "integer"
+                      },
+                      "Int64Array": {
+                        "items": {
+                          "type": "integer"
+                        },
+                        "type": "array"
+                      },
+                      "Int64ArrayArray": {
+                        "items": {
+                          "items": {
+                            "type": "integer"
+                          },
+                          "type": "array"
+                        },
+                        "type": "array"
+                      },
+                      "Int8": {
+                        "type": "integer"
+                      },
+                      "Int8Array": {
+                        "items": {
+                          "type": "integer"
+                        },
+                        "type": "array"
+                      },
+                      "Int8ArrayArray": {
+                        "items": {
+                          "items": {
+                            "type": "integer"
+                          },
+                          "type": "array"
+                        },
+                        "type": "array"
+                      },
+                      "IntArray": {
+                        "items": {
+                          "type": "integer"
+                        },
+                        "type": "array"
+                      },
+                      "IntArrayArray": {
+                        "items": {
+                          "items": {
+                            "type": "integer"
+                          },
+                          "type": "array"
+                        },
+                        "type": "array"
+                      }
+                    },
+                    "type": "object"
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "IntStructPointerArrayRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "items": {
+                    "properties": {
+                      "": {
+                        "type": "integer"
+                      },
+                      "int16Array": {
+                        "items": {
+                          "type": "integer"
+                        },
+                        "type": "array"
+                      },
+                      "int16ArrayArray": {
+                        "items": {
+                          "items": {
+                            "type": "integer"
+                          },
+                          "type": "array"
+                        },
+                        "type": "array"
+                      },
+                      "int32Array": {
+                        "items": {
+                          "type": "integer"
+                        },
+                        "type": "array"
+                      },
+                      "int32ArrayArray": {
+                        "items": {
+                          "items": {
+                            "type": "integer"
+                          },
+                          "type": "array"
+                        },
+                        "type": "array"
+                      },
+                      "int64Array": {
+                        "items": {
+                          "type": "integer"
+                        },
+                        "type": "array"
+                      },
+                      "int64ArrayArray": {
+                        "items": {
+                          "items": {
+                            "type": "integer"
+                          },
+                          "type": "array"
+                        },
+                        "type": "array"
+                      },
+                      "int8Array": {
+                        "items": {
+                          "type": "integer"
+                        },
+                        "type": "array"
+                      },
+                      "int8ArrayArray": {
+                        "items": {
+                          "items": {
+                            "type": "integer"
+                          },
+                          "type": "array"
+                        },
+                        "type": "array"
+                      },
+                      "intArray": {
+                        "items": {
+                          "type": "integer"
+                        },
+                        "type": "array"
+                      },
+                      "intArrayArray": {
+                        "items": {
+                          "items": {
+                            "type": "integer"
+                          },
+                          "type": "array"
+                        },
+                        "type": "array"
+                      }
+                    },
+                    "type": "object"
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "IntStructPointerRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "properties": {
+                    "": {
+                      "type": "integer"
+                    },
+                    "int16Array": {
+                      "items": {
+                        "type": "integer"
+                      },
+                      "type": "array"
+                    },
+                    "int16ArrayArray": {
+                      "items": {
+                        "items": {
+                          "type": "integer"
+                        },
+                        "type": "array"
+                      },
+                      "type": "array"
+                    },
+                    "int32Array": {
+                      "items": {
+                        "type": "integer"
+                      },
+                      "type": "array"
+                    },
+                    "int32ArrayArray": {
+                      "items": {
+                        "items": {
+                          "type": "integer"
+                        },
+                        "type": "array"
+                      },
+                      "type": "array"
+                    },
+                    "int64Array": {
+                      "items": {
+                        "type": "integer"
+                      },
+                      "type": "array"
+                    },
+                    "int64ArrayArray": {
+                      "items": {
+                        "items": {
+                          "type": "integer"
+                        },
+                        "type": "array"
+                      },
+                      "type": "array"
+                    },
+                    "int8Array": {
+                      "items": {
+                        "type": "integer"
+                      },
+                      "type": "array"
+                    },
+                    "int8ArrayArray": {
+                      "items": {
+                        "items": {
+                          "type": "integer"
+                        },
+                        "type": "array"
+                      },
+                      "type": "array"
+                    },
+                    "intArray": {
+                      "items": {
+                        "type": "integer"
+                      },
+                      "type": "array"
+                    },
+                    "intArrayArray": {
+                      "items": {
+                        "items": {
+                          "type": "integer"
+                        },
+                        "type": "array"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "IntStructRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Int"
+            }
+          }
+        }
+      },
+      "MapRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "m1": {
+                  "type": "object"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "StringArrayPointerRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "StringArrayRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "StringPointerRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "StringRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "StringStructPointerRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "properties": {
+                    "": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "StringStructRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/String"
+            }
+          }
+        }
+      },
+      "TimeArrayPointerRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "TimeArrayRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "TimePointerRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "TimeRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "TimeShadowPointerRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "TimeShadowRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "TypeArrayArrayPointerRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "items": {
+                    "items": {
+                      "properties": {
+                        "": {
+                          "type": "string"
+                        },
+                        "BoolArray": {
+                          "items": {
+                            "properties": {
+                              "": {
+                                "type": "boolean"
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "type": "array"
+                        },
+                        "BoolArrayArray": {
+                          "items": {
+                            "items": {
+                              "properties": {
+                                "": {
+                                  "type": "boolean"
+                                }
+                              },
+                              "type": "object"
+                            },
+                            "type": "array"
+                          },
+                          "type": "array"
+                        },
+                        "DecimalArray": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "DecimalArrayArray": {
+                          "items": {
+                            "items": {
+                              "type": "string"
+                            },
+                            "type": "array"
+                          },
+                          "type": "array"
+                        },
+                        "FloatArray": {
+                          "items": {
+                            "properties": {
+                              "": {
+                                "type": "number"
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "type": "array"
+                        },
+                        "FloatArrayArray": {
+                          "items": {
+                            "items": {
+                              "properties": {
+                                "": {
+                                  "type": "number"
+                                }
+                              },
+                              "type": "object"
+                            },
+                            "type": "array"
+                          },
+                          "type": "array"
+                        },
+                        "IntArray": {
+                          "items": {
+                            "properties": {
+                              "": {
+                                "type": "integer"
+                              },
+                              "int16Array": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "int16ArrayArray": {
+                                "items": {
+                                  "items": {
+                                    "type": "integer"
+                                  },
+                                  "type": "array"
+                                },
+                                "type": "array"
+                              },
+                              "int32Array": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "int32ArrayArray": {
+                                "items": {
+                                  "items": {
+                                    "type": "integer"
+                                  },
+                                  "type": "array"
+                                },
+                                "type": "array"
+                              },
+                              "int64Array": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "int64ArrayArray": {
+                                "items": {
+                                  "items": {
+                                    "type": "integer"
+                                  },
+                                  "type": "array"
+                                },
+                                "type": "array"
+                              },
+                              "int8Array": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "int8ArrayArray": {
+                                "items": {
+                                  "items": {
+                                    "type": "integer"
+                                  },
+                                  "type": "array"
+                                },
+                                "type": "array"
+                              },
+                              "intArray": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "intArrayArray": {
+                                "items": {
+                                  "items": {
+                                    "type": "integer"
+                                  },
+                                  "type": "array"
+                                },
+                                "type": "array"
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "type": "array"
+                        },
+                        "IntArrayArray": {
+                          "items": {
+                            "items": {
+                              "properties": {
+                                "": {
+                                  "type": "integer"
+                                },
+                                "int16Array": {
+                                  "items": {
+                                    "type": "integer"
+                                  },
+                                  "type": "array"
+                                },
+                                "int16ArrayArray": {
+                                  "items": {
+                                    "items": {
+                                      "type": "integer"
+                                    },
+                                    "type": "array"
+                                  },
+                                  "type": "array"
+                                },
+                                "int32Array": {
+                                  "items": {
+                                    "type": "integer"
+                                  },
+                                  "type": "array"
+                                },
+                                "int32ArrayArray": {
+                                  "items": {
+                                    "items": {
+                                      "type": "integer"
+                                    },
+                                    "type": "array"
+                                  },
+                                  "type": "array"
+                                },
+                                "int64Array": {
+                                  "items": {
+                                    "type": "integer"
+                                  },
+                                  "type": "array"
+                                },
+                                "int64ArrayArray": {
+                                  "items": {
+                                    "items": {
+                                      "type": "integer"
+                                    },
+                                    "type": "array"
+                                  },
+                                  "type": "array"
+                                },
+                                "int8Array": {
+                                  "items": {
+                                    "type": "integer"
+                                  },
+                                  "type": "array"
+                                },
+                                "int8ArrayArray": {
+                                  "items": {
+                                    "items": {
+                                      "type": "integer"
+                                    },
+                                    "type": "array"
+                                  },
+                                  "type": "array"
+                                },
+                                "intArray": {
+                                  "items": {
+                                    "type": "integer"
+                                  },
+                                  "type": "array"
+                                },
+                                "intArrayArray": {
+                                  "items": {
+                                    "items": {
+                                      "type": "integer"
+                                    },
+                                    "type": "array"
+                                  },
+                                  "type": "array"
+                                }
+                              },
+                              "type": "object"
+                            },
+                            "type": "array"
+                          },
+                          "type": "array"
+                        },
+                        "Map": {
+                          "type": "object"
+                        },
+                        "StringArray": {
+                          "items": {
+                            "properties": {
+                              "": {
+                                "type": "string"
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "type": "array"
+                        },
+                        "StringArrayArray": {
+                          "items": {
+                            "items": {
+                              "properties": {
+                                "": {
+                                  "type": "string"
+                                }
+                              },
+                              "type": "object"
+                            },
+                            "type": "array"
+                          },
+                          "type": "array"
+                        },
+                        "TimeArray": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "TimeArrayArray": {
+                          "items": {
+                            "items": {
+                              "type": "string"
+                            },
+                            "type": "array"
+                          },
+                          "type": "array"
+                        },
+                        "UintArray": {
+                          "items": {
+                            "properties": {
+                              "": {
+                                "type": "integer"
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "type": "array"
+                        },
+                        "UintArrayArray": {
+                          "items": {
+                            "items": {
+                              "properties": {
+                                "": {
+                                  "type": "integer"
+                                }
+                              },
+                              "type": "object"
+                            },
+                            "type": "array"
+                          },
+                          "type": "array"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "type": "array"
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "TypeArrayArrayRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "items": {
+                    "items": {
+                      "properties": {
+                        "Bool": {
+                          "properties": {
+                            "Bool": {
+                              "type": "boolean"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "BoolArray": {
+                          "items": {
+                            "properties": {
+                              "Bool": {
+                                "type": "boolean"
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "type": "array"
+                        },
+                        "BoolArrayArray": {
+                          "items": {
+                            "items": {
+                              "properties": {
+                                "Bool": {
+                                  "type": "boolean"
+                                }
+                              },
+                              "type": "object"
+                            },
+                            "type": "array"
+                          },
+                          "type": "array"
+                        },
+                        "Decimal": {
+                          "type": "string"
+                        },
+                        "DecimalArray": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "DecimalArrayArray": {
+                          "items": {
+                            "items": {
+                              "type": "string"
+                            },
+                            "type": "array"
+                          },
+                          "type": "array"
+                        },
+                        "Float": {
+                          "properties": {
+                            "Float32": {
+                              "type": "number"
+                            },
+                            "Float64": {
+                              "type": "number"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "FloatArray": {
+                          "items": {
+                            "properties": {
+                              "Float32": {
+                                "type": "number"
+                              },
+                              "Float64": {
+                                "type": "number"
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "type": "array"
+                        },
+                        "FloatArrayArray": {
+                          "items": {
+                            "items": {
+                              "properties": {
+                                "Float32": {
+                                  "type": "number"
+                                },
+                                "Float64": {
+                                  "type": "number"
+                                }
+                              },
+                              "type": "object"
+                            },
+                            "type": "array"
+                          },
+                          "type": "array"
+                        },
+                        "Int": {
+                          "properties": {
+                            "Int": {
+                              "type": "integer"
+                            },
+                            "Int16": {
+                              "type": "integer"
+                            },
+                            "Int16Array": {
+                              "items": {
+                                "type": "integer"
+                              },
+                              "type": "array"
+                            },
+                            "Int16ArrayArray": {
+                              "items": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "type": "array"
+                            },
+                            "Int32": {
+                              "type": "integer"
+                            },
+                            "Int32Array": {
+                              "items": {
+                                "type": "integer"
+                              },
+                              "type": "array"
+                            },
+                            "Int32ArrayArray": {
+                              "items": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "type": "array"
+                            },
+                            "Int64": {
+                              "type": "integer"
+                            },
+                            "Int64Array": {
+                              "items": {
+                                "type": "integer"
+                              },
+                              "type": "array"
+                            },
+                            "Int64ArrayArray": {
+                              "items": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "type": "array"
+                            },
+                            "Int8": {
+                              "type": "integer"
+                            },
+                            "Int8Array": {
+                              "items": {
+                                "type": "integer"
+                              },
+                              "type": "array"
+                            },
+                            "Int8ArrayArray": {
+                              "items": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "type": "array"
+                            },
+                            "IntArray": {
+                              "items": {
+                                "type": "integer"
+                              },
+                              "type": "array"
+                            },
+                            "IntArrayArray": {
+                              "items": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "type": "array"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "IntArray": {
+                          "items": {
+                            "properties": {
+                              "Int": {
+                                "type": "integer"
+                              },
+                              "Int16": {
+                                "type": "integer"
+                              },
+                              "Int16Array": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "Int16ArrayArray": {
+                                "items": {
+                                  "items": {
+                                    "type": "integer"
+                                  },
+                                  "type": "array"
+                                },
+                                "type": "array"
+                              },
+                              "Int32": {
+                                "type": "integer"
+                              },
+                              "Int32Array": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "Int32ArrayArray": {
+                                "items": {
+                                  "items": {
+                                    "type": "integer"
+                                  },
+                                  "type": "array"
+                                },
+                                "type": "array"
+                              },
+                              "Int64": {
+                                "type": "integer"
+                              },
+                              "Int64Array": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "Int64ArrayArray": {
+                                "items": {
+                                  "items": {
+                                    "type": "integer"
+                                  },
+                                  "type": "array"
+                                },
+                                "type": "array"
+                              },
+                              "Int8": {
+                                "type": "integer"
+                              },
+                              "Int8Array": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "Int8ArrayArray": {
+                                "items": {
+                                  "items": {
+                                    "type": "integer"
+                                  },
+                                  "type": "array"
+                                },
+                                "type": "array"
+                              },
+                              "IntArray": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "IntArrayArray": {
+                                "items": {
+                                  "items": {
+                                    "type": "integer"
+                                  },
+                                  "type": "array"
+                                },
+                                "type": "array"
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "type": "array"
+                        },
+                        "IntArrayArray": {
+                          "items": {
+                            "items": {
+                              "properties": {
+                                "Int": {
+                                  "type": "integer"
+                                },
+                                "Int16": {
+                                  "type": "integer"
+                                },
+                                "Int16Array": {
+                                  "items": {
+                                    "type": "integer"
+                                  },
+                                  "type": "array"
+                                },
+                                "Int16ArrayArray": {
+                                  "items": {
+                                    "items": {
+                                      "type": "integer"
+                                    },
+                                    "type": "array"
+                                  },
+                                  "type": "array"
+                                },
+                                "Int32": {
+                                  "type": "integer"
+                                },
+                                "Int32Array": {
+                                  "items": {
+                                    "type": "integer"
+                                  },
+                                  "type": "array"
+                                },
+                                "Int32ArrayArray": {
+                                  "items": {
+                                    "items": {
+                                      "type": "integer"
+                                    },
+                                    "type": "array"
+                                  },
+                                  "type": "array"
+                                },
+                                "Int64": {
+                                  "type": "integer"
+                                },
+                                "Int64Array": {
+                                  "items": {
+                                    "type": "integer"
+                                  },
+                                  "type": "array"
+                                },
+                                "Int64ArrayArray": {
+                                  "items": {
+                                    "items": {
+                                      "type": "integer"
+                                    },
+                                    "type": "array"
+                                  },
+                                  "type": "array"
+                                },
+                                "Int8": {
+                                  "type": "integer"
+                                },
+                                "Int8Array": {
+                                  "items": {
+                                    "type": "integer"
+                                  },
+                                  "type": "array"
+                                },
+                                "Int8ArrayArray": {
+                                  "items": {
+                                    "items": {
+                                      "type": "integer"
+                                    },
+                                    "type": "array"
+                                  },
+                                  "type": "array"
+                                },
+                                "IntArray": {
+                                  "items": {
+                                    "type": "integer"
+                                  },
+                                  "type": "array"
+                                },
+                                "IntArrayArray": {
+                                  "items": {
+                                    "items": {
+                                      "type": "integer"
+                                    },
+                                    "type": "array"
+                                  },
+                                  "type": "array"
+                                }
+                              },
+                              "type": "object"
+                            },
+                            "type": "array"
+                          },
+                          "type": "array"
+                        },
+                        "Map": {
+                          "type": "object"
+                        },
+                        "String": {
+                          "properties": {
+                            "String": {
+                              "type": "string"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "StringArray": {
+                          "items": {
+                            "properties": {
+                              "String": {
+                                "type": "string"
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "type": "array"
+                        },
+                        "StringArrayArray": {
+                          "items": {
+                            "items": {
+                              "properties": {
+                                "String": {
+                                  "type": "string"
+                                }
+                              },
+                              "type": "object"
+                            },
+                            "type": "array"
+                          },
+                          "type": "array"
+                        },
+                        "Time": {
+                          "type": "string"
+                        },
+                        "TimeArray": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "TimeArrayArray": {
+                          "items": {
+                            "items": {
+                              "type": "string"
+                            },
+                            "type": "array"
+                          },
+                          "type": "array"
+                        },
+                        "Uint": {
+                          "properties": {
+                            "Uint": {
+                              "type": "integer"
+                            },
+                            "Uint16": {
+                              "type": "integer"
+                            },
+                            "Uint32": {
+                              "type": "integer"
+                            },
+                            "Uint64": {
+                              "type": "integer"
+                            },
+                            "Uint8": {
+                              "type": "integer"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "UintArray": {
+                          "items": {
+                            "properties": {
+                              "Uint": {
+                                "type": "integer"
+                              },
+                              "Uint16": {
+                                "type": "integer"
+                              },
+                              "Uint32": {
+                                "type": "integer"
+                              },
+                              "Uint64": {
+                                "type": "integer"
+                              },
+                              "Uint8": {
+                                "type": "integer"
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "type": "array"
+                        },
+                        "UintArrayArray": {
+                          "items": {
+                            "items": {
+                              "properties": {
+                                "Uint": {
+                                  "type": "integer"
+                                },
+                                "Uint16": {
+                                  "type": "integer"
+                                },
+                                "Uint32": {
+                                  "type": "integer"
+                                },
+                                "Uint64": {
+                                  "type": "integer"
+                                },
+                                "Uint8": {
+                                  "type": "integer"
+                                }
+                              },
+                              "type": "object"
+                            },
+                            "type": "array"
+                          },
+                          "type": "array"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "type": "array"
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "TypeArrayPointerRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "items": {
+                    "properties": {
+                      "": {
+                        "type": "string"
+                      },
+                      "BoolArray": {
+                        "items": {
+                          "properties": {
+                            "": {
+                              "type": "boolean"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "type": "array"
+                      },
+                      "BoolArrayArray": {
+                        "items": {
+                          "items": {
+                            "properties": {
+                              "": {
+                                "type": "boolean"
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "type": "array"
+                        },
+                        "type": "array"
+                      },
+                      "DecimalArray": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array"
+                      },
+                      "DecimalArrayArray": {
+                        "items": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "type": "array"
+                      },
+                      "FloatArray": {
+                        "items": {
+                          "properties": {
+                            "": {
+                              "type": "number"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "type": "array"
+                      },
+                      "FloatArrayArray": {
+                        "items": {
+                          "items": {
+                            "properties": {
+                              "": {
+                                "type": "number"
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "type": "array"
+                        },
+                        "type": "array"
+                      },
+                      "IntArray": {
+                        "items": {
+                          "properties": {
+                            "": {
+                              "type": "integer"
+                            },
+                            "int16Array": {
+                              "items": {
+                                "type": "integer"
+                              },
+                              "type": "array"
+                            },
+                            "int16ArrayArray": {
+                              "items": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "type": "array"
+                            },
+                            "int32Array": {
+                              "items": {
+                                "type": "integer"
+                              },
+                              "type": "array"
+                            },
+                            "int32ArrayArray": {
+                              "items": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "type": "array"
+                            },
+                            "int64Array": {
+                              "items": {
+                                "type": "integer"
+                              },
+                              "type": "array"
+                            },
+                            "int64ArrayArray": {
+                              "items": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "type": "array"
+                            },
+                            "int8Array": {
+                              "items": {
+                                "type": "integer"
+                              },
+                              "type": "array"
+                            },
+                            "int8ArrayArray": {
+                              "items": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "type": "array"
+                            },
+                            "intArray": {
+                              "items": {
+                                "type": "integer"
+                              },
+                              "type": "array"
+                            },
+                            "intArrayArray": {
+                              "items": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "type": "array"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "type": "array"
+                      },
+                      "IntArrayArray": {
+                        "items": {
+                          "items": {
+                            "properties": {
+                              "": {
+                                "type": "integer"
+                              },
+                              "int16Array": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "int16ArrayArray": {
+                                "items": {
+                                  "items": {
+                                    "type": "integer"
+                                  },
+                                  "type": "array"
+                                },
+                                "type": "array"
+                              },
+                              "int32Array": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "int32ArrayArray": {
+                                "items": {
+                                  "items": {
+                                    "type": "integer"
+                                  },
+                                  "type": "array"
+                                },
+                                "type": "array"
+                              },
+                              "int64Array": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "int64ArrayArray": {
+                                "items": {
+                                  "items": {
+                                    "type": "integer"
+                                  },
+                                  "type": "array"
+                                },
+                                "type": "array"
+                              },
+                              "int8Array": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "int8ArrayArray": {
+                                "items": {
+                                  "items": {
+                                    "type": "integer"
+                                  },
+                                  "type": "array"
+                                },
+                                "type": "array"
+                              },
+                              "intArray": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "intArrayArray": {
+                                "items": {
+                                  "items": {
+                                    "type": "integer"
+                                  },
+                                  "type": "array"
+                                },
+                                "type": "array"
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "type": "array"
+                        },
+                        "type": "array"
+                      },
+                      "Map": {
+                        "type": "object"
+                      },
+                      "StringArray": {
+                        "items": {
+                          "properties": {
+                            "": {
+                              "type": "string"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "type": "array"
+                      },
+                      "StringArrayArray": {
+                        "items": {
+                          "items": {
+                            "properties": {
+                              "": {
+                                "type": "string"
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "type": "array"
+                        },
+                        "type": "array"
+                      },
+                      "TimeArray": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array"
+                      },
+                      "TimeArrayArray": {
+                        "items": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "type": "array"
+                      },
+                      "UintArray": {
+                        "items": {
+                          "properties": {
+                            "": {
+                              "type": "integer"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "type": "array"
+                      },
+                      "UintArrayArray": {
+                        "items": {
+                          "items": {
+                            "properties": {
+                              "": {
+                                "type": "integer"
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "type": "array"
+                        },
+                        "type": "array"
+                      }
+                    },
+                    "type": "object"
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "TypeArrayRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "items": {
+                    "properties": {
+                      "Bool": {
+                        "properties": {
+                          "Bool": {
+                            "type": "boolean"
+                          }
+                        },
+                        "type": "object"
+                      },
+                      "BoolArray": {
+                        "items": {
+                          "properties": {
+                            "Bool": {
+                              "type": "boolean"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "type": "array"
+                      },
+                      "BoolArrayArray": {
+                        "items": {
+                          "items": {
+                            "properties": {
+                              "Bool": {
+                                "type": "boolean"
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "type": "array"
+                        },
+                        "type": "array"
+                      },
+                      "Decimal": {
+                        "type": "string"
+                      },
+                      "DecimalArray": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array"
+                      },
+                      "DecimalArrayArray": {
+                        "items": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "type": "array"
+                      },
+                      "Float": {
+                        "properties": {
+                          "Float32": {
+                            "type": "number"
+                          },
+                          "Float64": {
+                            "type": "number"
+                          }
+                        },
+                        "type": "object"
+                      },
+                      "FloatArray": {
+                        "items": {
+                          "properties": {
+                            "Float32": {
+                              "type": "number"
+                            },
+                            "Float64": {
+                              "type": "number"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "type": "array"
+                      },
+                      "FloatArrayArray": {
+                        "items": {
+                          "items": {
+                            "properties": {
+                              "Float32": {
+                                "type": "number"
+                              },
+                              "Float64": {
+                                "type": "number"
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "type": "array"
+                        },
+                        "type": "array"
+                      },
+                      "Int": {
+                        "properties": {
+                          "Int": {
+                            "type": "integer"
+                          },
+                          "Int16": {
+                            "type": "integer"
+                          },
+                          "Int16Array": {
+                            "items": {
+                              "type": "integer"
+                            },
+                            "type": "array"
+                          },
+                          "Int16ArrayArray": {
+                            "items": {
+                              "items": {
+                                "type": "integer"
+                              },
+                              "type": "array"
+                            },
+                            "type": "array"
+                          },
+                          "Int32": {
+                            "type": "integer"
+                          },
+                          "Int32Array": {
+                            "items": {
+                              "type": "integer"
+                            },
+                            "type": "array"
+                          },
+                          "Int32ArrayArray": {
+                            "items": {
+                              "items": {
+                                "type": "integer"
+                              },
+                              "type": "array"
+                            },
+                            "type": "array"
+                          },
+                          "Int64": {
+                            "type": "integer"
+                          },
+                          "Int64Array": {
+                            "items": {
+                              "type": "integer"
+                            },
+                            "type": "array"
+                          },
+                          "Int64ArrayArray": {
+                            "items": {
+                              "items": {
+                                "type": "integer"
+                              },
+                              "type": "array"
+                            },
+                            "type": "array"
+                          },
+                          "Int8": {
+                            "type": "integer"
+                          },
+                          "Int8Array": {
+                            "items": {
+                              "type": "integer"
+                            },
+                            "type": "array"
+                          },
+                          "Int8ArrayArray": {
+                            "items": {
+                              "items": {
+                                "type": "integer"
+                              },
+                              "type": "array"
+                            },
+                            "type": "array"
+                          },
+                          "IntArray": {
+                            "items": {
+                              "type": "integer"
+                            },
+                            "type": "array"
+                          },
+                          "IntArrayArray": {
+                            "items": {
+                              "items": {
+                                "type": "integer"
+                              },
+                              "type": "array"
+                            },
+                            "type": "array"
+                          }
+                        },
+                        "type": "object"
+                      },
+                      "IntArray": {
+                        "items": {
+                          "properties": {
+                            "Int": {
+                              "type": "integer"
+                            },
+                            "Int16": {
+                              "type": "integer"
+                            },
+                            "Int16Array": {
+                              "items": {
+                                "type": "integer"
+                              },
+                              "type": "array"
+                            },
+                            "Int16ArrayArray": {
+                              "items": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "type": "array"
+                            },
+                            "Int32": {
+                              "type": "integer"
+                            },
+                            "Int32Array": {
+                              "items": {
+                                "type": "integer"
+                              },
+                              "type": "array"
+                            },
+                            "Int32ArrayArray": {
+                              "items": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "type": "array"
+                            },
+                            "Int64": {
+                              "type": "integer"
+                            },
+                            "Int64Array": {
+                              "items": {
+                                "type": "integer"
+                              },
+                              "type": "array"
+                            },
+                            "Int64ArrayArray": {
+                              "items": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "type": "array"
+                            },
+                            "Int8": {
+                              "type": "integer"
+                            },
+                            "Int8Array": {
+                              "items": {
+                                "type": "integer"
+                              },
+                              "type": "array"
+                            },
+                            "Int8ArrayArray": {
+                              "items": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "type": "array"
+                            },
+                            "IntArray": {
+                              "items": {
+                                "type": "integer"
+                              },
+                              "type": "array"
+                            },
+                            "IntArrayArray": {
+                              "items": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "type": "array"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "type": "array"
+                      },
+                      "IntArrayArray": {
+                        "items": {
+                          "items": {
+                            "properties": {
+                              "Int": {
+                                "type": "integer"
+                              },
+                              "Int16": {
+                                "type": "integer"
+                              },
+                              "Int16Array": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "Int16ArrayArray": {
+                                "items": {
+                                  "items": {
+                                    "type": "integer"
+                                  },
+                                  "type": "array"
+                                },
+                                "type": "array"
+                              },
+                              "Int32": {
+                                "type": "integer"
+                              },
+                              "Int32Array": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "Int32ArrayArray": {
+                                "items": {
+                                  "items": {
+                                    "type": "integer"
+                                  },
+                                  "type": "array"
+                                },
+                                "type": "array"
+                              },
+                              "Int64": {
+                                "type": "integer"
+                              },
+                              "Int64Array": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "Int64ArrayArray": {
+                                "items": {
+                                  "items": {
+                                    "type": "integer"
+                                  },
+                                  "type": "array"
+                                },
+                                "type": "array"
+                              },
+                              "Int8": {
+                                "type": "integer"
+                              },
+                              "Int8Array": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "Int8ArrayArray": {
+                                "items": {
+                                  "items": {
+                                    "type": "integer"
+                                  },
+                                  "type": "array"
+                                },
+                                "type": "array"
+                              },
+                              "IntArray": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "IntArrayArray": {
+                                "items": {
+                                  "items": {
+                                    "type": "integer"
+                                  },
+                                  "type": "array"
+                                },
+                                "type": "array"
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "type": "array"
+                        },
+                        "type": "array"
+                      },
+                      "Map": {
+                        "type": "object"
+                      },
+                      "String": {
+                        "properties": {
+                          "String": {
+                            "type": "string"
+                          }
+                        },
+                        "type": "object"
+                      },
+                      "StringArray": {
+                        "items": {
+                          "properties": {
+                            "String": {
+                              "type": "string"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "type": "array"
+                      },
+                      "StringArrayArray": {
+                        "items": {
+                          "items": {
+                            "properties": {
+                              "String": {
+                                "type": "string"
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "type": "array"
+                        },
+                        "type": "array"
+                      },
+                      "Time": {
+                        "type": "string"
+                      },
+                      "TimeArray": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array"
+                      },
+                      "TimeArrayArray": {
+                        "items": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "type": "array"
+                      },
+                      "Uint": {
+                        "properties": {
+                          "Uint": {
+                            "type": "integer"
+                          },
+                          "Uint16": {
+                            "type": "integer"
+                          },
+                          "Uint32": {
+                            "type": "integer"
+                          },
+                          "Uint64": {
+                            "type": "integer"
+                          },
+                          "Uint8": {
+                            "type": "integer"
+                          }
+                        },
+                        "type": "object"
+                      },
+                      "UintArray": {
+                        "items": {
+                          "properties": {
+                            "Uint": {
+                              "type": "integer"
+                            },
+                            "Uint16": {
+                              "type": "integer"
+                            },
+                            "Uint32": {
+                              "type": "integer"
+                            },
+                            "Uint64": {
+                              "type": "integer"
+                            },
+                            "Uint8": {
+                              "type": "integer"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "type": "array"
+                      },
+                      "UintArrayArray": {
+                        "items": {
+                          "items": {
+                            "properties": {
+                              "Uint": {
+                                "type": "integer"
+                              },
+                              "Uint16": {
+                                "type": "integer"
+                              },
+                              "Uint32": {
+                                "type": "integer"
+                              },
+                              "Uint64": {
+                                "type": "integer"
+                              },
+                              "Uint8": {
+                                "type": "integer"
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "type": "array"
+                        },
+                        "type": "array"
+                      }
+                    },
+                    "type": "object"
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "TypePointerRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "properties": {
+                    "": {
+                      "type": "string"
+                    },
+                    "BoolArray": {
+                      "items": {
+                        "properties": {
+                          "": {
+                            "type": "boolean"
+                          }
+                        },
+                        "type": "object"
+                      },
+                      "type": "array"
+                    },
+                    "BoolArrayArray": {
+                      "items": {
+                        "items": {
+                          "properties": {
+                            "": {
+                              "type": "boolean"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "type": "array"
+                      },
+                      "type": "array"
+                    },
+                    "DecimalArray": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
+                    "DecimalArrayArray": {
+                      "items": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array"
+                      },
+                      "type": "array"
+                    },
+                    "FloatArray": {
+                      "items": {
+                        "properties": {
+                          "": {
+                            "type": "number"
+                          }
+                        },
+                        "type": "object"
+                      },
+                      "type": "array"
+                    },
+                    "FloatArrayArray": {
+                      "items": {
+                        "items": {
+                          "properties": {
+                            "": {
+                              "type": "number"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "type": "array"
+                      },
+                      "type": "array"
+                    },
+                    "IntArray": {
+                      "items": {
+                        "properties": {
+                          "": {
+                            "type": "integer"
+                          },
+                          "int16Array": {
+                            "items": {
+                              "type": "integer"
+                            },
+                            "type": "array"
+                          },
+                          "int16ArrayArray": {
+                            "items": {
+                              "items": {
+                                "type": "integer"
+                              },
+                              "type": "array"
+                            },
+                            "type": "array"
+                          },
+                          "int32Array": {
+                            "items": {
+                              "type": "integer"
+                            },
+                            "type": "array"
+                          },
+                          "int32ArrayArray": {
+                            "items": {
+                              "items": {
+                                "type": "integer"
+                              },
+                              "type": "array"
+                            },
+                            "type": "array"
+                          },
+                          "int64Array": {
+                            "items": {
+                              "type": "integer"
+                            },
+                            "type": "array"
+                          },
+                          "int64ArrayArray": {
+                            "items": {
+                              "items": {
+                                "type": "integer"
+                              },
+                              "type": "array"
+                            },
+                            "type": "array"
+                          },
+                          "int8Array": {
+                            "items": {
+                              "type": "integer"
+                            },
+                            "type": "array"
+                          },
+                          "int8ArrayArray": {
+                            "items": {
+                              "items": {
+                                "type": "integer"
+                              },
+                              "type": "array"
+                            },
+                            "type": "array"
+                          },
+                          "intArray": {
+                            "items": {
+                              "type": "integer"
+                            },
+                            "type": "array"
+                          },
+                          "intArrayArray": {
+                            "items": {
+                              "items": {
+                                "type": "integer"
+                              },
+                              "type": "array"
+                            },
+                            "type": "array"
+                          }
+                        },
+                        "type": "object"
+                      },
+                      "type": "array"
+                    },
+                    "IntArrayArray": {
+                      "items": {
+                        "items": {
+                          "properties": {
+                            "": {
+                              "type": "integer"
+                            },
+                            "int16Array": {
+                              "items": {
+                                "type": "integer"
+                              },
+                              "type": "array"
+                            },
+                            "int16ArrayArray": {
+                              "items": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "type": "array"
+                            },
+                            "int32Array": {
+                              "items": {
+                                "type": "integer"
+                              },
+                              "type": "array"
+                            },
+                            "int32ArrayArray": {
+                              "items": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "type": "array"
+                            },
+                            "int64Array": {
+                              "items": {
+                                "type": "integer"
+                              },
+                              "type": "array"
+                            },
+                            "int64ArrayArray": {
+                              "items": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "type": "array"
+                            },
+                            "int8Array": {
+                              "items": {
+                                "type": "integer"
+                              },
+                              "type": "array"
+                            },
+                            "int8ArrayArray": {
+                              "items": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "type": "array"
+                            },
+                            "intArray": {
+                              "items": {
+                                "type": "integer"
+                              },
+                              "type": "array"
+                            },
+                            "intArrayArray": {
+                              "items": {
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "type": "array"
+                              },
+                              "type": "array"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "type": "array"
+                      },
+                      "type": "array"
+                    },
+                    "Map": {
+                      "type": "object"
+                    },
+                    "StringArray": {
+                      "items": {
+                        "properties": {
+                          "": {
+                            "type": "string"
+                          }
+                        },
+                        "type": "object"
+                      },
+                      "type": "array"
+                    },
+                    "StringArrayArray": {
+                      "items": {
+                        "items": {
+                          "properties": {
+                            "": {
+                              "type": "string"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "type": "array"
+                      },
+                      "type": "array"
+                    },
+                    "TimeArray": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
+                    "TimeArrayArray": {
+                      "items": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array"
+                      },
+                      "type": "array"
+                    },
+                    "UintArray": {
+                      "items": {
+                        "properties": {
+                          "": {
+                            "type": "integer"
+                          }
+                        },
+                        "type": "object"
+                      },
+                      "type": "array"
+                    },
+                    "UintArrayArray": {
+                      "items": {
+                        "items": {
+                          "properties": {
+                            "": {
+                              "type": "integer"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "type": "array"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "TypeRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Type"
+            }
+          }
+        }
+      },
+      "UIntPointerRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "type": "integer"
+                },
+                "p2": {
+                  "type": "integer"
+                },
+                "p3": {
+                  "type": "integer"
+                },
+                "p4": {
+                  "type": "integer"
+                },
+                "p5": {
+                  "type": "integer"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "UintArrayPointerRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "items": {
+                    "type": "integer"
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "UintArrayRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "items": {
+                    "type": "integer"
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "UintRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "type": "integer"
+                },
+                "p2": {
+                  "type": "integer"
+                },
+                "p3": {
+                  "type": "integer"
+                },
+                "p4": {
+                  "type": "integer"
+                },
+                "p5": {
+                  "type": "integer"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "UintStructPointerRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "p1": {
+                  "properties": {
+                    "": {
+                      "type": "integer"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      },
+      "UintStructRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Uint"
+            }
+          }
+        }
+      }
+    },
+    "schemas": {
+      "Bool": {
+        "properties": {
+          "Bool": {
+            "type": "boolean"
+          }
+        },
+        "type": "object"
+      },
+      "BoolPointer": {
+        "properties": {
+          "": {
+            "type": "boolean"
+          }
+        },
+        "type": "object"
+      },
+      "Float": {
+        "properties": {
+          "Float32": {
+            "type": "number"
+          },
+          "Float64": {
+            "type": "number"
+          }
+        },
+        "type": "object"
+      },
+      "FloatPointer": {
+        "properties": {
+          "": {
+            "type": "number"
+          }
+        },
+        "type": "object"
+      },
+      "Int": {
+        "properties": {
+          "Int": {
+            "type": "integer"
+          },
+          "Int16": {
+            "type": "integer"
+          },
+          "Int16Array": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array"
+          },
+          "Int16ArrayArray": {
+            "items": {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            "type": "array"
+          },
+          "Int32": {
+            "type": "integer"
+          },
+          "Int32Array": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array"
+          },
+          "Int32ArrayArray": {
+            "items": {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            "type": "array"
+          },
+          "Int64": {
+            "type": "integer"
+          },
+          "Int64Array": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array"
+          },
+          "Int64ArrayArray": {
+            "items": {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            "type": "array"
+          },
+          "Int8": {
+            "type": "integer"
+          },
+          "Int8Array": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array"
+          },
+          "Int8ArrayArray": {
+            "items": {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            "type": "array"
+          },
+          "IntArray": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array"
+          },
+          "IntArrayArray": {
+            "items": {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      },
+      "IntPointer": {
+        "properties": {
+          "": {
+            "type": "integer"
+          },
+          "int16Array": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array"
+          },
+          "int16ArrayArray": {
+            "items": {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            "type": "array"
+          },
+          "int32Array": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array"
+          },
+          "int32ArrayArray": {
+            "items": {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            "type": "array"
+          },
+          "int64Array": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array"
+          },
+          "int64ArrayArray": {
+            "items": {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            "type": "array"
+          },
+          "int8Array": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array"
+          },
+          "int8ArrayArray": {
+            "items": {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            "type": "array"
+          },
+          "intArray": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array"
+          },
+          "intArrayArray": {
+            "items": {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      },
+      "String": {
+        "properties": {
+          "String": {
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "StringPointer": {
+        "properties": {
+          "": {
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "Type": {
+        "properties": {
+          "Bool": {
+            "properties": {
+              "Bool": {
+                "type": "boolean"
+              }
+            },
+            "type": "object"
+          },
+          "BoolArray": {
+            "items": {
+              "properties": {
+                "Bool": {
+                  "type": "boolean"
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "BoolArrayArray": {
+            "items": {
+              "items": {
+                "properties": {
+                  "Bool": {
+                    "type": "boolean"
+                  }
+                },
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "type": "array"
+          },
+          "Decimal": {
+            "type": "string"
+          },
+          "DecimalArray": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "DecimalArrayArray": {
+            "items": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "type": "array"
+          },
+          "Float": {
+            "properties": {
+              "Float32": {
+                "type": "number"
+              },
+              "Float64": {
+                "type": "number"
+              }
+            },
+            "type": "object"
+          },
+          "FloatArray": {
+            "items": {
+              "properties": {
+                "Float32": {
+                  "type": "number"
+                },
+                "Float64": {
+                  "type": "number"
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "FloatArrayArray": {
+            "items": {
+              "items": {
+                "properties": {
+                  "Float32": {
+                    "type": "number"
+                  },
+                  "Float64": {
+                    "type": "number"
+                  }
+                },
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "type": "array"
+          },
+          "Int": {
+            "properties": {
+              "Int": {
+                "type": "integer"
+              },
+              "Int16": {
+                "type": "integer"
+              },
+              "Int16Array": {
+                "items": {
+                  "type": "integer"
+                },
+                "type": "array"
+              },
+              "Int16ArrayArray": {
+                "items": {
+                  "items": {
+                    "type": "integer"
+                  },
+                  "type": "array"
+                },
+                "type": "array"
+              },
+              "Int32": {
+                "type": "integer"
+              },
+              "Int32Array": {
+                "items": {
+                  "type": "integer"
+                },
+                "type": "array"
+              },
+              "Int32ArrayArray": {
+                "items": {
+                  "items": {
+                    "type": "integer"
+                  },
+                  "type": "array"
+                },
+                "type": "array"
+              },
+              "Int64": {
+                "type": "integer"
+              },
+              "Int64Array": {
+                "items": {
+                  "type": "integer"
+                },
+                "type": "array"
+              },
+              "Int64ArrayArray": {
+                "items": {
+                  "items": {
+                    "type": "integer"
+                  },
+                  "type": "array"
+                },
+                "type": "array"
+              },
+              "Int8": {
+                "type": "integer"
+              },
+              "Int8Array": {
+                "items": {
+                  "type": "integer"
+                },
+                "type": "array"
+              },
+              "Int8ArrayArray": {
+                "items": {
+                  "items": {
+                    "type": "integer"
+                  },
+                  "type": "array"
+                },
+                "type": "array"
+              },
+              "IntArray": {
+                "items": {
+                  "type": "integer"
+                },
+                "type": "array"
+              },
+              "IntArrayArray": {
+                "items": {
+                  "items": {
+                    "type": "integer"
+                  },
+                  "type": "array"
+                },
+                "type": "array"
+              }
+            },
+            "type": "object"
+          },
+          "IntArray": {
+            "items": {
+              "properties": {
+                "Int": {
+                  "type": "integer"
+                },
+                "Int16": {
+                  "type": "integer"
+                },
+                "Int16Array": {
+                  "items": {
+                    "type": "integer"
+                  },
+                  "type": "array"
+                },
+                "Int16ArrayArray": {
+                  "items": {
+                    "items": {
+                      "type": "integer"
+                    },
+                    "type": "array"
+                  },
+                  "type": "array"
+                },
+                "Int32": {
+                  "type": "integer"
+                },
+                "Int32Array": {
+                  "items": {
+                    "type": "integer"
+                  },
+                  "type": "array"
+                },
+                "Int32ArrayArray": {
+                  "items": {
+                    "items": {
+                      "type": "integer"
+                    },
+                    "type": "array"
+                  },
+                  "type": "array"
+                },
+                "Int64": {
+                  "type": "integer"
+                },
+                "Int64Array": {
+                  "items": {
+                    "type": "integer"
+                  },
+                  "type": "array"
+                },
+                "Int64ArrayArray": {
+                  "items": {
+                    "items": {
+                      "type": "integer"
+                    },
+                    "type": "array"
+                  },
+                  "type": "array"
+                },
+                "Int8": {
+                  "type": "integer"
+                },
+                "Int8Array": {
+                  "items": {
+                    "type": "integer"
+                  },
+                  "type": "array"
+                },
+                "Int8ArrayArray": {
+                  "items": {
+                    "items": {
+                      "type": "integer"
+                    },
+                    "type": "array"
+                  },
+                  "type": "array"
+                },
+                "IntArray": {
+                  "items": {
+                    "type": "integer"
+                  },
+                  "type": "array"
+                },
+                "IntArrayArray": {
+                  "items": {
+                    "items": {
+                      "type": "integer"
+                    },
+                    "type": "array"
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "IntArrayArray": {
+            "items": {
+              "items": {
+                "properties": {
+                  "Int": {
+                    "type": "integer"
+                  },
+                  "Int16": {
+                    "type": "integer"
+                  },
+                  "Int16Array": {
+                    "items": {
+                      "type": "integer"
+                    },
+                    "type": "array"
+                  },
+                  "Int16ArrayArray": {
+                    "items": {
+                      "items": {
+                        "type": "integer"
+                      },
+                      "type": "array"
+                    },
+                    "type": "array"
+                  },
+                  "Int32": {
+                    "type": "integer"
+                  },
+                  "Int32Array": {
+                    "items": {
+                      "type": "integer"
+                    },
+                    "type": "array"
+                  },
+                  "Int32ArrayArray": {
+                    "items": {
+                      "items": {
+                        "type": "integer"
+                      },
+                      "type": "array"
+                    },
+                    "type": "array"
+                  },
+                  "Int64": {
+                    "type": "integer"
+                  },
+                  "Int64Array": {
+                    "items": {
+                      "type": "integer"
+                    },
+                    "type": "array"
+                  },
+                  "Int64ArrayArray": {
+                    "items": {
+                      "items": {
+                        "type": "integer"
+                      },
+                      "type": "array"
+                    },
+                    "type": "array"
+                  },
+                  "Int8": {
+                    "type": "integer"
+                  },
+                  "Int8Array": {
+                    "items": {
+                      "type": "integer"
+                    },
+                    "type": "array"
+                  },
+                  "Int8ArrayArray": {
+                    "items": {
+                      "items": {
+                        "type": "integer"
+                      },
+                      "type": "array"
+                    },
+                    "type": "array"
+                  },
+                  "IntArray": {
+                    "items": {
+                      "type": "integer"
+                    },
+                    "type": "array"
+                  },
+                  "IntArrayArray": {
+                    "items": {
+                      "items": {
+                        "type": "integer"
+                      },
+                      "type": "array"
+                    },
+                    "type": "array"
+                  }
+                },
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "type": "array"
+          },
+          "Map": {
+            "type": "object"
+          },
+          "String": {
+            "properties": {
+              "String": {
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "StringArray": {
+            "items": {
+              "properties": {
+                "String": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "StringArrayArray": {
+            "items": {
+              "items": {
+                "properties": {
+                  "String": {
+                    "type": "string"
+                  }
+                },
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "type": "array"
+          },
+          "Time": {
+            "type": "string"
+          },
+          "TimeArray": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "TimeArrayArray": {
+            "items": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "type": "array"
+          },
+          "Uint": {
+            "properties": {
+              "Uint": {
+                "type": "integer"
+              },
+              "Uint16": {
+                "type": "integer"
+              },
+              "Uint32": {
+                "type": "integer"
+              },
+              "Uint64": {
+                "type": "integer"
+              },
+              "Uint8": {
+                "type": "integer"
+              }
+            },
+            "type": "object"
+          },
+          "UintArray": {
+            "items": {
+              "properties": {
+                "Uint": {
+                  "type": "integer"
+                },
+                "Uint16": {
+                  "type": "integer"
+                },
+                "Uint32": {
+                  "type": "integer"
+                },
+                "Uint64": {
+                  "type": "integer"
+                },
+                "Uint8": {
+                  "type": "integer"
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "UintArrayArray": {
+            "items": {
+              "items": {
+                "properties": {
+                  "Uint": {
+                    "type": "integer"
+                  },
+                  "Uint16": {
+                    "type": "integer"
+                  },
+                  "Uint32": {
+                    "type": "integer"
+                  },
+                  "Uint64": {
+                    "type": "integer"
+                  },
+                  "Uint8": {
+                    "type": "integer"
+                  }
+                },
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      },
+      "TypePointer": {
+        "properties": {
+          "": {
+            "type": "string"
+          },
+          "BoolArray": {
+            "items": {
+              "properties": {
+                "": {
+                  "type": "boolean"
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "BoolArrayArray": {
+            "items": {
+              "items": {
+                "properties": {
+                  "": {
+                    "type": "boolean"
+                  }
+                },
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "type": "array"
+          },
+          "DecimalArray": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "DecimalArrayArray": {
+            "items": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "type": "array"
+          },
+          "FloatArray": {
+            "items": {
+              "properties": {
+                "": {
+                  "type": "number"
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "FloatArrayArray": {
+            "items": {
+              "items": {
+                "properties": {
+                  "": {
+                    "type": "number"
+                  }
+                },
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "type": "array"
+          },
+          "IntArray": {
+            "items": {
+              "properties": {
+                "": {
+                  "type": "integer"
+                },
+                "int16Array": {
+                  "items": {
+                    "type": "integer"
+                  },
+                  "type": "array"
+                },
+                "int16ArrayArray": {
+                  "items": {
+                    "items": {
+                      "type": "integer"
+                    },
+                    "type": "array"
+                  },
+                  "type": "array"
+                },
+                "int32Array": {
+                  "items": {
+                    "type": "integer"
+                  },
+                  "type": "array"
+                },
+                "int32ArrayArray": {
+                  "items": {
+                    "items": {
+                      "type": "integer"
+                    },
+                    "type": "array"
+                  },
+                  "type": "array"
+                },
+                "int64Array": {
+                  "items": {
+                    "type": "integer"
+                  },
+                  "type": "array"
+                },
+                "int64ArrayArray": {
+                  "items": {
+                    "items": {
+                      "type": "integer"
+                    },
+                    "type": "array"
+                  },
+                  "type": "array"
+                },
+                "int8Array": {
+                  "items": {
+                    "type": "integer"
+                  },
+                  "type": "array"
+                },
+                "int8ArrayArray": {
+                  "items": {
+                    "items": {
+                      "type": "integer"
+                    },
+                    "type": "array"
+                  },
+                  "type": "array"
+                },
+                "intArray": {
+                  "items": {
+                    "type": "integer"
+                  },
+                  "type": "array"
+                },
+                "intArrayArray": {
+                  "items": {
+                    "items": {
+                      "type": "integer"
+                    },
+                    "type": "array"
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "IntArrayArray": {
+            "items": {
+              "items": {
+                "properties": {
+                  "": {
+                    "type": "integer"
+                  },
+                  "int16Array": {
+                    "items": {
+                      "type": "integer"
+                    },
+                    "type": "array"
+                  },
+                  "int16ArrayArray": {
+                    "items": {
+                      "items": {
+                        "type": "integer"
+                      },
+                      "type": "array"
+                    },
+                    "type": "array"
+                  },
+                  "int32Array": {
+                    "items": {
+                      "type": "integer"
+                    },
+                    "type": "array"
+                  },
+                  "int32ArrayArray": {
+                    "items": {
+                      "items": {
+                        "type": "integer"
+                      },
+                      "type": "array"
+                    },
+                    "type": "array"
+                  },
+                  "int64Array": {
+                    "items": {
+                      "type": "integer"
+                    },
+                    "type": "array"
+                  },
+                  "int64ArrayArray": {
+                    "items": {
+                      "items": {
+                        "type": "integer"
+                      },
+                      "type": "array"
+                    },
+                    "type": "array"
+                  },
+                  "int8Array": {
+                    "items": {
+                      "type": "integer"
+                    },
+                    "type": "array"
+                  },
+                  "int8ArrayArray": {
+                    "items": {
+                      "items": {
+                        "type": "integer"
+                      },
+                      "type": "array"
+                    },
+                    "type": "array"
+                  },
+                  "intArray": {
+                    "items": {
+                      "type": "integer"
+                    },
+                    "type": "array"
+                  },
+                  "intArrayArray": {
+                    "items": {
+                      "items": {
+                        "type": "integer"
+                      },
+                      "type": "array"
+                    },
+                    "type": "array"
+                  }
+                },
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "type": "array"
+          },
+          "Map": {
+            "type": "object"
+          },
+          "StringArray": {
+            "items": {
+              "properties": {
+                "": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "StringArrayArray": {
+            "items": {
+              "items": {
+                "properties": {
+                  "": {
+                    "type": "string"
+                  }
+                },
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "type": "array"
+          },
+          "TimeArray": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "TimeArrayArray": {
+            "items": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "type": "array"
+          },
+          "UintArray": {
+            "items": {
+              "properties": {
+                "": {
+                  "type": "integer"
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "UintArrayArray": {
+            "items": {
+              "items": {
+                "properties": {
+                  "": {
+                    "type": "integer"
+                  }
+                },
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      },
+      "Uint": {
+        "properties": {
+          "Uint": {
+            "type": "integer"
+          },
+          "Uint16": {
+            "type": "integer"
+          },
+          "Uint32": {
+            "type": "integer"
+          },
+          "Uint64": {
+            "type": "integer"
+          },
+          "Uint8": {
+            "type": "integer"
+          }
+        },
+        "type": "object"
+      },
+      "UintPointer": {
+        "properties": {
+          "": {
+            "type": "integer"
+          }
+        },
+        "type": "object"
+      }
+    }
+  },
+  "info": {
+    "title": "",
+    "version": ""
+  },
+  "openapi": "3.0.3",
+  "paths": {
+    "/Bool": {
+      "post": {
+        "operationId": "Bool",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/BoolRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/BoolArray": {
+      "post": {
+        "operationId": "BoolArray",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/BoolArrayRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/BoolArrayPointer": {
+      "post": {
+        "operationId": "BoolArrayPointer",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/BoolArrayPointerRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/BoolPointer": {
+      "post": {
+        "operationId": "BoolPointer",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/BoolPointerRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/BoolStruct": {
+      "post": {
+        "operationId": "BoolStruct",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/BoolStructRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/BoolStructPointer": {
+      "post": {
+        "operationId": "BoolStructPointer",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/BoolStructPointerRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/Decimal": {
+      "post": {
+        "operationId": "Decimal",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/DecimalRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/DecimalArray": {
+      "post": {
+        "operationId": "DecimalArray",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/DecimalArrayRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/DecimalArrayPointer": {
+      "post": {
+        "operationId": "DecimalArrayPointer",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/DecimalArrayPointerRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/DecimalPinter": {
+      "post": {
+        "operationId": "DecimalPinter",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/DecimalPinterRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/DecimalShadow": {
+      "post": {
+        "operationId": "DecimalShadow",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/DecimalShadowRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/DecimalShadowPointer": {
+      "post": {
+        "operationId": "DecimalShadowPointer",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/DecimalShadowPointerRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/Float": {
+      "post": {
+        "operationId": "Float",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/FloatRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/FloatArray": {
+      "post": {
+        "operationId": "FloatArray",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/FloatArrayRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/FloatArrayPointer": {
+      "post": {
+        "operationId": "FloatArrayPointer",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/FloatArrayPointerRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/FloatPointer": {
+      "post": {
+        "operationId": "FloatPointer",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/FloatPointerRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/FloatStruct": {
+      "post": {
+        "operationId": "FloatStruct",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/FloatStructRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/FloatStructPointer": {
+      "post": {
+        "operationId": "FloatStructPointer",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/FloatStructPointerRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/Int": {
+      "post": {
+        "operationId": "Int",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/IntRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/IntArray": {
+      "post": {
+        "operationId": "IntArray",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/IntArrayRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/IntArrayPointer": {
+      "post": {
+        "operationId": "IntArrayPointer",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/IntArrayPointerRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/IntPointer": {
+      "post": {
+        "operationId": "IntPointer",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/IntPointerRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/IntStruct": {
+      "post": {
+        "operationId": "IntStruct",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/IntStructRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/IntStructArray": {
+      "post": {
+        "operationId": "IntStructArray",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/IntStructArrayRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/IntStructPointer": {
+      "post": {
+        "operationId": "IntStructPointer",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/IntStructPointerRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/IntStructPointerArray": {
+      "post": {
+        "operationId": "IntStructPointerArray",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/IntStructPointerArrayRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/Map": {
+      "post": {
+        "operationId": "Map",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/MapRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/Ping": {
+      "post": {
+        "operationId": "Ping",
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/String": {
+      "post": {
+        "operationId": "String",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/StringRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/StringArray": {
+      "post": {
+        "operationId": "StringArray",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/StringArrayRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/StringArrayPointer": {
+      "post": {
+        "operationId": "StringArrayPointer",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/StringArrayPointerRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/StringPointer": {
+      "post": {
+        "operationId": "StringPointer",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/StringPointerRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/StringStruct": {
+      "post": {
+        "operationId": "StringStruct",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/StringStructRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/StringStructPointer": {
+      "post": {
+        "operationId": "StringStructPointer",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/StringStructPointerRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/Time": {
+      "post": {
+        "operationId": "Time",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/TimeRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/TimeArray": {
+      "post": {
+        "operationId": "TimeArray",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/TimeArrayRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/TimeArrayPointer": {
+      "post": {
+        "operationId": "TimeArrayPointer",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/TimeArrayPointerRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/TimePointer": {
+      "post": {
+        "operationId": "TimePointer",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/TimePointerRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/TimeShadow": {
+      "post": {
+        "operationId": "TimeShadow",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/TimeShadowRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/TimeShadowPointer": {
+      "post": {
+        "operationId": "TimeShadowPointer",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/TimeShadowPointerRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/Type": {
+      "post": {
+        "operationId": "Type",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/TypeRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/TypeArray": {
+      "post": {
+        "operationId": "TypeArray",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/TypeArrayRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/TypeArrayArray": {
+      "post": {
+        "operationId": "TypeArrayArray",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/TypeArrayArrayRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/TypeArrayArrayPointer": {
+      "post": {
+        "operationId": "TypeArrayArrayPointer",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/TypeArrayArrayPointerRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/TypeArrayPointer": {
+      "post": {
+        "operationId": "TypeArrayPointer",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/TypeArrayPointerRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/TypePointer": {
+      "post": {
+        "operationId": "TypePointer",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/TypePointerRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/UIntPointer": {
+      "post": {
+        "operationId": "UIntPointer",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/UIntPointerRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/Uint": {
+      "post": {
+        "operationId": "Uint",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/UintRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/UintArray": {
+      "post": {
+        "operationId": "UintArray",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/UintArrayRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/UintArrayPointer": {
+      "post": {
+        "operationId": "UintArrayPointer",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/UintArrayPointerRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/UintStruct": {
+      "post": {
+        "operationId": "UintStruct",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/UintStructRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/UintStructPointer": {
+      "post": {
+        "operationId": "UintStructPointer",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/UintStructPointerRequest"
+        },
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    }
+  }
+}
