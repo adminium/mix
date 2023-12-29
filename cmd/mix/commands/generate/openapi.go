@@ -2,11 +2,10 @@ package cmdGenerate
 
 import (
 	"os"
-	"path/filepath"
 
+	"github.com/adminium/fs"
 	"github.com/adminium/mix/cmd/mix/commands"
 	"github.com/adminium/mix/generator/openapi"
-	"github.com/gozelle/fs"
 	"github.com/spf13/cobra"
 )
 
@@ -19,17 +18,17 @@ var openapiCmd = &cobra.Command{
 
 var (
 	openapiTpl       string
-	openapiPath      string
+	openapiPackage   string
 	openapiInterface string
 	openapiOutfile   string
 )
 
 func init() {
-	openapiCmd.Flags().StringVar(&openapiPath, "path", "", "[必填]源目录")
-	openapiCmd.Flags().StringVar(&openapiInterface, "interface", "", "[必填]源 Interface 名")
+	openapiCmd.Flags().StringVar(&openapiPackage, "package", "", "[必填]指定包路径")
+	openapiCmd.Flags().StringVar(&openapiInterface, "interface", "", "[必填]指定 Interface 名")
 	openapiCmd.Flags().StringVar(&openapiOutfile, "outfile", "", "[必填]生成文件路径")
 	openapiCmd.Flags().StringVar(&openapiTpl, "template", "", "[可选] OpenAPI 文件模板")
-	openapiCmd.MarkFlagsRequiredTogether("path", "interface", "outfile")
+	openapiCmd.MarkFlagsRequiredTogether("package", "interface", "outfile")
 }
 
 func generateOpenapi(cmd *cobra.Command, args []string) {
@@ -39,13 +38,14 @@ func generateOpenapi(cmd *cobra.Command, args []string) {
 		commands.Fatal(err)
 	}
 
-	openapiPath = filepath.Join(pwd, openapiPath)
-	openapiOutfile = filepath.Join(pwd, openapiOutfile)
+	openapiPackage = fs.Join(pwd, openapiPackage)
+	openapiOutfile = fs.Join(pwd, openapiOutfile)
+
 	if openapiTpl != "" {
-		openapiTpl = filepath.Join(pwd, openapiTpl)
+		openapiTpl = fs.Join(pwd, openapiTpl)
 	}
 
-	doc, err := openapi.Parse(openapiTpl, openapiPath, openapiInterface)
+	doc, err := openapi.Parse(openapiTpl, openapiPackage, openapiInterface)
 	if err != nil {
 		commands.Fatal(err)
 	}

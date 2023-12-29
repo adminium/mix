@@ -1,0 +1,57 @@
+{
+  "components": {
+    "schemas": {
+      "LoginReq": {
+        "properties": {
+          "Password": {
+            "type": "string"
+          },
+          "Username": {
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "LoginResp": {
+        "properties": {
+          "Token": {
+            "type": "string"
+          }
+        },
+        "type": "object"
+      }
+    }
+  },
+  "info": {
+    "title": "",
+    "version": ""
+  },
+  "openapi": "3.0.3",
+  "paths": {
+    "/Login": {
+      "post": {
+        "operationId": "Login",
+        "parameters": [
+          {
+            "name": "req",
+            "schema": {
+              "$ref": "#/components/schemas/LoginReq"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoginResp"
+                }
+              }
+            },
+            "description": "success"
+          }
+        }
+      }
+    }
+  }
+}

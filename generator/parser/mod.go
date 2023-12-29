@@ -135,7 +135,7 @@ func (m Mod) GetPackageLocation(pkg string) string {
 		}
 	}
 
-	if fs.Exist(fs.Join(m.Gopath(), "src")) {
+	if !fs.Exist(fs.Join(m.Gopath(), "src")) {
 		fmt.Println(color.YellowString("no src directory found at GOPATH: %s\n", m.Gopath()))
 	}
 
@@ -194,7 +194,7 @@ func (m Mod) GetPackageFiles(path string) (files []string, err error) {
 	if !fs.Exist(path) {
 		return
 	}
-	files, err = fs.Files(path, ".go")
+	files, err = fs.Files(false, path, ".go")
 	if err != nil {
 		return
 	}

@@ -48,8 +48,13 @@ func Parse(tplFile, sourcePath string, interfaceName string) (doc *DocumentV3, e
 		return
 	}
 
-	r := ConvertAPI(i)
+	err = i.Load()
+	if err != nil {
+		err = fmt.Errorf("load interface: %s error: %s", interfaceName, err)
+		return
+	}
 
+	r := ConvertAPI(i)
 	ConvertOpenapi(doc, r)
 
 	return

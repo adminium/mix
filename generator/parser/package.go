@@ -98,7 +98,7 @@ func (p *Package) Parse(mod *Mod, dir string) error {
 	if !fs.IsDir(dir) {
 		return fmt.Errorf("only accept dir, get: %s", dir)
 	}
-	files, err := fs.Files(dir, ".go")
+	files, err := fs.Files(false, dir, ".go")
 	if err != nil {
 		return err
 	}

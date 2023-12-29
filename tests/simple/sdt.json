@@ -1,0 +1,240 @@
+{
+  "components": {
+    "schemas": {
+      "LoginReply": {
+        "properties": {
+          "ExpiredAt": {
+            "type": "integer"
+          },
+          "Id": {
+            "type": "integer"
+          },
+          "Mail": {
+            "type": "string"
+          },
+          "Nickname": {
+            "type": "string"
+          },
+          "Token": {
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "LoginRequest": {
+        "properties": {
+          "Mail": {
+            "type": "string"
+          },
+          "Password": {
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "RegisterRequest": {
+        "properties": {
+          "Code": {
+            "type": "string"
+          },
+          "Mail": {
+            "type": "string"
+          },
+          "Password": {
+            "type": "string"
+          },
+          "Token": {
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "ResetPasswordByCodeRequest": {
+        "properties": {
+          "Code": {
+            "type": "string"
+          },
+          "Mail": {
+            "type": "string"
+          },
+          "NewPassword": {
+            "type": "string"
+          },
+          "Token": {
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "UserInfo": {
+        "properties": {
+          "Mail": {
+            "type": "string"
+          },
+          "Nickname": {
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "VerificationCodeReply": {
+        "properties": {
+          "Token": {
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "VerificationCodeRequest": {
+        "properties": {
+          "Mail": {
+            "type": "string"
+          }
+        },
+        "type": "object"
+      }
+    }
+  },
+  "info": {
+    "title": "",
+    "version": ""
+  },
+  "openapi": "3.0.3",
+  "paths": {
+    "/KLines": {
+      "post": {
+        "operationId": "KLines",
+        "parameters": [
+          {
+            "name": "req",
+            "schema": {
+              "$ref": "#/components/schemas/KLinesReq"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/KLinesResp"
+                }
+              }
+            },
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/Login": {
+      "post": {
+        "operationId": "Login",
+        "parameters": [
+          {
+            "name": "req",
+            "schema": {
+              "$ref": "#/components/schemas/LoginRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoginReply"
+                }
+              }
+            },
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/RegisterByCode": {
+      "post": {
+        "operationId": "RegisterByCode",
+        "parameters": [
+          {
+            "name": "req",
+            "schema": {
+              "$ref": "#/components/schemas/RegisterRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoginReply"
+                }
+              }
+            },
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/ResetPasswordByCode": {
+      "post": {
+        "operationId": "ResetPasswordByCode",
+        "parameters": [
+          {
+            "name": "req",
+            "schema": {
+              "$ref": "#/components/schemas/ResetPasswordByCodeRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/SendVerificationCode": {
+      "post": {
+        "operationId": "SendVerificationCode",
+        "parameters": [
+          {
+            "name": "req",
+            "schema": {
+              "$ref": "#/components/schemas/VerificationCodeRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/VerificationCodeReply"
+                }
+              }
+            },
+            "description": "success"
+          }
+        }
+      }
+    },
+    "/UserInfo": {
+      "post": {
+        "operationId": "UserInfo",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserInfo"
+                }
+              }
+            },
+            "description": "success"
+          }
+        }
+      }
+    }
+  }
+}

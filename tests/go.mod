@@ -3,21 +3,20 @@ module github.comm/adminium/mix/tests
 go 1.20
 
 require (
-	github.com/adminium/fs v0.0.0-20231228081153-bb9ff6ae010a
 	github.com/adminium/mix v0.0.0-00010101000000-000000000000
 	github.com/gozelle/spew v1.1.17
 	github.com/stretchr/testify v1.8.4
 )
 
 require (
+	github.com/adminium/fs v0.0.0-20231228081153-bb9ff6ae010a // indirect
 	github.com/adminium/logger v1.5.0 // indirect
+	github.com/adminium/pointer v0.0.0-20231228130649-c3de46c89bc9 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/go-openapi/jsonpointer v0.19.6 // indirect
 	github.com/go-openapi/swag v0.22.4 // indirect
 	github.com/gozelle/color v1.14.1 // indirect
-	github.com/gozelle/fs v0.0.0-20230809081238-947da77c7007 // indirect
 	github.com/gozelle/openapi v0.0.0-20230123143103-d70969bef392 // indirect
-	github.com/gozelle/pointer v0.0.0-20230124152942-5286d508f8ab // indirect
 	github.com/invopop/yaml v0.2.0 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect

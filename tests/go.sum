@@ -2,6 +2,8 @@ github.com/adminium/fs v0.0.0-20231228081153-bb9ff6ae010a h1:Ca5Ac+LrMot9qrnkoGu
 github.com/adminium/fs v0.0.0-20231228081153-bb9ff6ae010a/go.mod h1:hzdpIxSP0Yux96THfx5o/RUaWYdvT4k9+zmeSgjWNYU=
 github.com/adminium/logger v1.5.0 h1:f896rhm5oLv8RTXylKlprkdu9JHaovU7v0NAzmiS1AU=
 github.com/adminium/logger v1.5.0/go.mod h1:GtVGPAKGk/Mwg6qrsmgQKkSI+7RFZPLZv4X1XB4Xoag=
+github.com/adminium/pointer v0.0.0-20231228130649-c3de46c89bc9 h1:ZtG3eWExK2RsqOchXI/tSmfumnWi0R4UdRGW/7+0OY4=
+github.com/adminium/pointer v0.0.0-20231228130649-c3de46c89bc9/go.mod h1:myZSFNdHClmjUPsmMq65/5ebePWqMzyY/pd5bRBhV6k=
 github.com/benbjohnson/clock v1.1.0 h1:Q92kusRqC1XV2MjkWETPvjJVqKetz1OzxZB7mHJLju8=
 github.com/benbjohnson/clock v1.1.0/go.mod h1:J11/hYXuz8f4ySSvYwY0FKfm+ezbsZBKZxNJlLklBHA=
 github.com/creack/pty v1.1.9/go.mod h1:oKZEueFk5CKHvIhNR5MUki03XCEU+Q6VDXinZuGJ33E=
@@ -21,18 +23,10 @@ github.com/go-test/deep v1.0.8/go.mod h1:5C2ZWiW0ErCdrYzpqxLbTX7MG14M9iiw8DgHncV
 github.com/gorilla/mux v1.8.0/go.mod h1:DVbg23sWSpFRCP0SfiEN6jmj59UnW/n46BH5rLB71So=
 github.com/gozelle/color v1.14.1 h1:LaL/QqtYQ2U0I8qYPh2YZ7yBMR0t8S6QKMtspt0tFlM=
 github.com/gozelle/color v1.14.1/go.mod h1:DHZWJhgd/EivRAAzewN+szF5jC4AEDN3tnHdktjVeq8=
-github.com/gozelle/fs v0.0.0-20230809081238-947da77c7007 h1:tjqu60peNDmzNWVaD66dt8lddGYZe3iyN1mTm1byLug=
-github.com/gozelle/fs v0.0.0-20230809081238-947da77c7007/go.mod h1:0zXEnBogLTXTKqZlw2NWMoQKZ6VWKVhTxeJIw/W19Aw=
-github.com/gozelle/go-difflib v1.0.0 h1:BIQXTH387TRKUtDGMTaPmoFKKWZQMRR4mSxxcPLOjXQ=
-github.com/gozelle/humanize v1.0.1 h1:7mAbg2sgF7AJxc5W7IZfANuZG4Ji/7cQdXudi1hUOe0=
 github.com/gozelle/openapi v0.0.0-20230123143103-d70969bef392 h1:3QWoh6ubMIOR2R6ZZ5VZWetfGZFGAdAJU52WFjHwvqI=
 github.com/gozelle/openapi v0.0.0-20230123143103-d70969bef392/go.mod h1:7TaZNuU1fCzpa2FqWfL7IzeN1nmtP/zRhmeJPd4I6ok=
-github.com/gozelle/pointer v0.0.0-20230124152942-5286d508f8ab h1:hr9lIgfu8ETqHa/KDNUWNBva7MOKoVIeolMjKHfeySE=
-github.com/gozelle/pointer v0.0.0-20230124152942-5286d508f8ab/go.mod h1:59shQaqJGhb00p6UGYDnwtwP57iWdmuD9TPBlwMk4CU=
 github.com/gozelle/spew v1.1.17 h1:vuPw/AnJQaVsNTZIjgyMTXDbIUEEn309QBFQPgG44oQ=
 github.com/gozelle/spew v1.1.17/go.mod h1:/mxhg2oObEemDs3+L36p5+VpBsOMpW1dnsOmLKmKg6U=
-github.com/gozelle/testify v1.8.12 h1:bGV6aRGOr13V2S2l1pxCi4TVMOcSDyhsqqTieqGAk9A=
-github.com/gozelle/yaml v0.0.0-20230127161149-50ad9e131615 h1:3K+DRahbfKjbVTfUjyENvuGfrZ+TES0ttWjdpwN6WEU=
 github.com/invopop/yaml v0.1.0/go.mod h1:2XuRLgs/ouIrW3XNzuNj7J3Nvu/Dig5MXvbCEdiBN3Q=
 github.com/invopop/yaml v0.2.0 h1:7zky/qH+O0DwAyoobXUqvVBwgBFRxKoQ/3FjcVpjTMY=
 github.com/invopop/yaml v0.2.0/go.mod h1:2XuRLgs/ouIrW3XNzuNj7J3Nvu/Dig5MXvbCEdiBN3Q=

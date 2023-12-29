@@ -2,6 +2,12 @@ cloud.google.com/go v0.26.0/go.mod h1:aQUYkXzVsufM+DwF1aE+0xfcU+56JwCaLick0ClmMT
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
 github.com/adminium/fs v0.0.0-20231228081153-bb9ff6ae010a h1:Ca5Ac+LrMot9qrnkoGu7ghhZZaWWvQlHdw4KSuj4VoU=
 github.com/adminium/fs v0.0.0-20231228081153-bb9ff6ae010a/go.mod h1:hzdpIxSP0Yux96THfx5o/RUaWYdvT4k9+zmeSgjWNYU=
+github.com/adminium/fs v0.0.0-20231229081309-9e8d3f67f485 h1:0EsnQ1BGBjfFmQYV3YsSlV2pCRthaOvxJAoqRrbgFxc=
+github.com/adminium/fs v0.0.0-20231229081309-9e8d3f67f485/go.mod h1:hzdpIxSP0Yux96THfx5o/RUaWYdvT4k9+zmeSgjWNYU=
+github.com/adminium/fs v0.0.0-20231229083842-7f15d8d1e205 h1:qKHaE4UIs5dK3YJv9YC5YlptXxrlxnVoRMZrkeFlQVU=
+github.com/adminium/fs v0.0.0-20231229083842-7f15d8d1e205/go.mod h1:hzdpIxSP0Yux96THfx5o/RUaWYdvT4k9+zmeSgjWNYU=
+github.com/adminium/fs v0.0.0-20231229124222-6303975c9e7d h1:5DD6RRU8oprLIb5X4brkPTYOxFXtq8xnq0ehRCY27Sk=
+github.com/adminium/fs v0.0.0-20231229124222-6303975c9e7d/go.mod h1:hzdpIxSP0Yux96THfx5o/RUaWYdvT4k9+zmeSgjWNYU=
 github.com/adminium/logger v1.5.0 h1:f896rhm5oLv8RTXylKlprkdu9JHaovU7v0NAzmiS1AU=
 github.com/adminium/logger v1.5.0/go.mod h1:GtVGPAKGk/Mwg6qrsmgQKkSI+7RFZPLZv4X1XB4Xoag=
 github.com/adminium/pointer v0.0.0-20231228130649-c3de46c89bc9 h1:ZtG3eWExK2RsqOchXI/tSmfumnWi0R4UdRGW/7+0OY4=

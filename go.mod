@@ -3,7 +3,7 @@ module github.com/adminium/mix
 go 1.20
 
 require (
-	github.com/adminium/fs v0.0.0-20231228081153-bb9ff6ae010a
+	github.com/adminium/fs v0.0.0-20231229124222-6303975c9e7d
 	github.com/adminium/jsonrpc v0.0.0-20231228050543-70caebc2beef
 	github.com/adminium/logger v1.5.0
 	github.com/adminium/pointer v0.0.0-20231228130649-c3de46c89bc9

@@ -32,11 +32,11 @@ func (i *Interface) Load() (err error) {
 			typeName := mt.Sel.Name
 			imt := i.file.getImport(pkgName)
 			if imt == nil {
-				panic(i.file.Errorf(m.Pos(), "can't found import: %s", pkgName))
+				panic(i.file.Errorf(m.Pos(), "can't find import: %s", pkgName))
 			}
 			include := imt.Package.GetInterface(typeName)
 			if include == nil {
-				panic(i.file.Errorf(m.Pos(), "can't found interface: %s.%s", pkgName, typeName))
+				panic(i.file.Errorf(m.Pos(), "can't find interface: %s.%s", pkgName, typeName))
 			}
 			err = include.Load()
 			if err != nil {
@@ -47,7 +47,7 @@ func (i *Interface) Load() (err error) {
 		case *ast.Ident:
 			include := i.file.pkg.GetInterface(mt.Name)
 			if include == nil {
-				panic(i.file.Errorf(m.Pos(), "can't found interface: %s", mt.Name))
+				panic(i.file.Errorf(m.Pos(), "can't find interface: %s", mt.Name))
 			}
 			err = include.Load()
 			if err != nil {
@@ -64,9 +64,7 @@ func (i *Interface) Load() (err error) {
 }
 
 func (i *Interface) parseMethod(name string, t *ast.FuncType, cmt []*ast.CommentGroup) (r *Method) {
-	
 	r = &Method{Name: name}
-	
 	if t.Params != nil {
 		for index, f := range t.Params.List {
 			names := i.parseNames(f.Names)
@@ -76,7 +74,6 @@ func (i *Interface) parseMethod(name string, t *ast.FuncType, cmt []*ast.Comment
 			r.Params = append(r.Params, i.parseParam(names, f.Type))
 		}
 	}
-	
 	if t.Results != nil {
 		for index, f := range t.Results.List {
 			names := i.parseNames(f.Names)
@@ -86,7 +83,6 @@ func (i *Interface) parseMethod(name string, t *ast.FuncType, cmt []*ast.Comment
 			r.Results = append(r.Results, i.parseParam(names, f.Type))
 		}
 	}
-	
 	return
 }
 
@@ -109,13 +105,10 @@ func (i *Interface) getDef(name string) *Def {
 }
 
 func (i *Interface) parseParam(names []string, t ast.Expr) (r *Param) {
-	
 	r = &Param{
 		Names: names,
 	}
-	
 	r.Type = parseType(i.file, i, "", t)
-	
 	return
 }
 

@@ -1,4 +1,4 @@
-package tests
+package simple
 
 import "context"
 
@@ -7,7 +7,10 @@ type SimpleAPI interface {
 }
 
 type LoginReq struct {
+	Username string
+	Password string
 }
 
 type LoginResp struct {
+	Token string
 }
