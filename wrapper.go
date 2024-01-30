@@ -76,7 +76,7 @@ func WrapHandler(wrap func(ctx *gin.Context) (any, error)) gin.HandlerFunc {
 	return func(ctx *gin.Context) {
 		r, err := wrap(ctx)
 		if err != nil {
-			if e, ok := err.(*Error); ok {
+			if e, ok := err.(*jsonrpc.Error); ok {
 				ctx.Header(jsonrpc.X_RPC_ERROR, e.Message)
 				ctx.JSON(http.StatusBadRequest, &jsonrpc.Response{
 					ID:    ctx.Writer.Header().Get(jsonrpc.X_RPC_ID),

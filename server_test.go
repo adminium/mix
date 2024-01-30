@@ -35,10 +35,7 @@ func (t TestHandler) Error(ctx context.Context) error {
 }
 
 func (t TestHandler) Code(ctx context.Context) error {
-	return &Error{
-		Code:    1000,
-		Message: "自定义错误",
-	}
+	return Codef(1000, "自定义错误")
 }
 
 func (t TestHandler) Query(ctx context.Context, page, limit int) (reply string, err error) {
@@ -64,7 +61,7 @@ func TestServer(t *testing.T) {
 	server := NewServer()
 	group := server.Group("/api/v1")
 
-	server.RegisterRPC(server.Group("/rpc/v1"), "", h)
+	server.RegisterRPC(server.Group("/rpc/v1"), "test", h)
 	server.RegisterAPI(group, "", h)
 
 	group.GET("/download", WrapHandler(func(ctx *gin.Context) (data any, err error) {
@@ -72,7 +69,8 @@ func TestServer(t *testing.T) {
 		return h.Download(ctx, "ok"), nil
 	}))
 
-	require.NoError(t, server.Run(":11111"))
+	require.NoError(t, server.Run(":10000"))
+
 }
 
 func TestOpenAPI(t *testing.T) {

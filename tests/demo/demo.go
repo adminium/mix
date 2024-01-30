@@ -1,9 +1,11 @@
-package simple
+package demo
 
 import "context"
 
-type SimpleAPI interface {
+type FullAPI interface {
+	Ping(ctx context.Context) error
 	Login(ctx context.Context, req LoginReq) (resp LoginResp, err error)
+	CustomErr(ctx context.Context) error
 }
 
 type LoginReq struct {

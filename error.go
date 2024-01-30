@@ -6,21 +6,19 @@ import (
 	"github.com/adminium/jsonrpc"
 )
 
-type Error = jsonrpc.Error
+type Warning = jsonrpc.Warning
 
-func NewError(code int, message string) *Error {
-	return &Error{Code: jsonrpc.ErrorCode(code), Message: message}
-}
+var _ error = (*Warning)(nil)
 
-func Errorf(format string, a ...any) *Error {
-	return &Error{
+func Wranf(format string, a ...any) *Warning {
+	return &Warning{
 		Message: fmt.Sprintf(format, a...),
 	}
 }
 
-func Codef(code int, format string, a ...any) *Error {
-	return &Error{
-		Code:    jsonrpc.ErrorCode(code),
+func Codef(code int, format string, a ...any) *Warning {
+	return &Warning{
+		Code:    code,
 		Message: fmt.Sprintf(format, a...),
 	}
 }

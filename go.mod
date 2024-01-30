@@ -4,18 +4,18 @@ go 1.20
 
 require (
 	github.com/adminium/fs v0.0.0-20231229124222-6303975c9e7d
-	github.com/adminium/jsonrpc v0.0.0-20231228050543-70caebc2beef
-	github.com/adminium/logger v1.5.0
+	github.com/adminium/jsonrpc v0.0.0-20240130162845-6143cb8681d2
+	github.com/adminium/logger v1.5.1
 	github.com/adminium/pointer v0.0.0-20231228130649-c3de46c89bc9
+	github.com/fatih/structs v1.1.0
+	github.com/flosch/pongo2/v6 v6.0.0
 	github.com/gin-gonic/gin v1.9.1
-	github.com/gozelle/cobra v1.6.3
 	github.com/gozelle/color v1.14.1
 	github.com/gozelle/fastjson v1.6.5
 	github.com/gozelle/fs v0.0.0-20230809081238-947da77c7007
 	github.com/gozelle/mix v0.2.6
 	github.com/gozelle/openapi v0.0.0-20230123143103-d70969bef392
 	github.com/gozelle/spew v1.1.17
-	github.com/gozelle/structs v1.1.0
 	github.com/gozelle/testify v1.8.12
 	github.com/invopop/yaml v0.2.0
 	github.com/shopspring/decimal v1.3.1
@@ -33,8 +33,6 @@ require (
 	github.com/bytedance/sonic v1.9.1 // indirect
 	github.com/chenzhuoyu/base64x v0.0.0-20221115062448-fe3a3abad311 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
-	github.com/fatih/structs v1.1.0 // indirect
-	github.com/flosch/pongo2/v6 v6.0.0 // indirect
 	github.com/gabriel-vasile/mimetype v1.4.2 // indirect
 	github.com/gin-contrib/sse v0.1.0 // indirect
 	github.com/go-openapi/jsonpointer v0.19.6 // indirect
@@ -44,7 +42,7 @@ require (
 	github.com/go-playground/validator/v10 v10.14.0 // indirect
 	github.com/goccy/go-json v0.10.2 // indirect
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
-	github.com/google/uuid v1.1.1 // indirect
+	github.com/google/uuid v1.1.2 // indirect
 	github.com/gorilla/websocket v1.4.2 // indirect
 	github.com/gozelle/go-difflib v1.0.0 // indirect
 	github.com/gozelle/isatty v0.0.17 // indirect
@@ -80,4 +78,4 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/adminium/jsonrpc => ../jsonrpc
+//replace github.com/adminium/jsonrpc => ../jsonrpc

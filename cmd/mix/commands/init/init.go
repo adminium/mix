@@ -1,4 +1,4 @@
-package cmdInit
+package init
 
 import "github.com/spf13/cobra"
 

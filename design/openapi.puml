@@ -1,0 +1,19 @@
+@startmindmap
+'https://plantuml.com/mindmap-diagram
+
+
+title mix generate openapi
+
+* generateOpenapi
+** struct parser.Mod // go mod context
+*** Test
+*** test2
+*** test3
+** struct parser.Package // go package context
+** struct parser.Interface // go interface context
+** func parser.Interface.Load() // load interface context, such as parameter types
+** struct openapi.API // go interface api
+** func ConvertAPI : parser.Interface => openapi.API
+** func ConvertOpenapi: openapi.API => openapi.DocumentV3
+
+@endmindmap

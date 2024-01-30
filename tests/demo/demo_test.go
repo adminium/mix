@@ -1,4 +1,4 @@
-package simple
+package demo
 
 import (
 	"fmt"
@@ -10,6 +10,10 @@ import (
 	"github.com/adminium/mix/generator/parser"
 	"github.com/stretchr/testify/require"
 )
+
+func TestMixServer(t *testing.T) {
+
+}
 
 func TestParse(t *testing.T) {
 

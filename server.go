@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	"github.com/adminium/jsonrpc"
-	"github.com/adminium/mix/middlewares/cors"
+	"github.com/adminium/mix/cors"
 	"github.com/gin-gonic/gin"
 )
 
@@ -27,16 +27,13 @@ func (s *Server) RegisterRPC(router gin.IRouter, namespace string, handler any, 
 }
 
 func (s *Server) RegisterAPI(router gin.IRouter, namespace string, handler any, middlewares ...gin.HandlerFunc) {
-
 	var path string
 	if strings.TrimSpace(namespace) == "" {
 		path = fmt.Sprintf("/:%s", method)
 	} else {
 		path = fmt.Sprintf("/:%s/:%s", module, method)
 	}
-
 	rpcServer := jsonrpc.NewServer()
 	rpcServer.Register(namespace, handler)
-
 	router.POST(path, append([]gin.HandlerFunc{wrapAPI(namespace, rpcServer)}, middlewares...)...)
 }

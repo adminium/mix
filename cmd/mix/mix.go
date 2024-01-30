@@ -6,8 +6,8 @@ package main
 import (
 	"os"
 
-	cmdGenerate "github.com/adminium/mix/cmd/mix/commands/generate"
-	initCmd "github.com/adminium/mix/cmd/mix/commands/init"
+	"github.com/adminium/mix/cmd/mix/commands/generate"
+	_init "github.com/adminium/mix/cmd/mix/commands/init"
 	"github.com/spf13/cobra"
 )
 
@@ -55,8 +55,8 @@ func init() {
 
 func main() {
 	rootCmd.AddCommand(
-		initCmd.InitCmd,
-		cmdGenerate.GenerateCmd,
+		_init.InitCmd,
+		generate.GenerateCmd,
 	)
 	Execute()
 }

@@ -87,7 +87,7 @@ func (f *File) Visit(node ast.Node) ast.Visitor {
 	}
 	switch t := s.Type.(type) {
 	case *ast.InterfaceType:
-		f.pkg.addInterface(s.Name.String(), &Interface{Name: s.Name.String(), interfaceType: t, file: f})
+		f.pkg.addInterface(s.Name.String(), &Interface{Name: s.Name.String(), astInterface: t, file: f})
 	}
 
 	switch t := s.Type.(type) {

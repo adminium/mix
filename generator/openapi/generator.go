@@ -17,7 +17,7 @@ type GenerateCmd struct {
 	Interface string
 }
 
-func Parse(tplFile, sourcePath string, interfaceName string) (doc *DocumentV3, err error) {
+func Parse(tplFile, packagePath string, interfaceName string) (doc *DocumentV3, err error) {
 
 	doc, err = Load(tplFile)
 	if err != nil {
@@ -36,7 +36,7 @@ func Parse(tplFile, sourcePath string, interfaceName string) (doc *DocumentV3, e
 		return
 	}
 
-	pkg, err := parser.Parse(mod, sourcePath)
+	pkg, err := parser.Parse(mod, packagePath)
 	if err != nil {
 		err = fmt.Errorf("parse package error: %s", err)
 		return

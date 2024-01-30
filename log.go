@@ -32,14 +32,14 @@ func SetBearer(ctx *gin.Context, bearer string) {
 
 func LoggerWithConfig(conf LoggerConfig) gin.HandlerFunc {
 
-	notlogged := conf.SkipPaths
+	notLogged := conf.SkipPaths
 
 	var skip map[string]struct{}
 
-	if length := len(notlogged); length > 0 {
+	if length := len(notLogged); length > 0 {
 		skip = make(map[string]struct{}, length)
 
-		for _, path := range notlogged {
+		for _, path := range notLogged {
 			skip[path] = struct{}{}
 		}
 	}

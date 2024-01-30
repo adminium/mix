@@ -1,4 +1,4 @@
-package cmdGenerate
+package generate
 
 import (
 	"fmt"

@@ -24,9 +24,9 @@ func ConvertAPI(i *parser.Interface) *API {
 	//	})
 	//}
 
-	convertDefs(r, i)
-	for _, v := range i.Includes {
-		convertDefs(r, v)
+	convertDefs(r, i.Defs)
+	for _, v := range i.Inlines {
+		convertDefs(r, v.Defs)
 	}
 
 	for _, v := range i.Methods {
@@ -36,8 +36,8 @@ func ConvertAPI(i *parser.Interface) *API {
 	return r
 }
 
-func convertDefs(r *API, i *parser.Interface) {
-	for _, v := range i.Defs {
+func convertDefs(r *API, defs []*parser.Def) {
+	for _, v := range defs {
 		if v.Type.Type != parser.TStruct {
 			continue
 		}
@@ -47,7 +47,6 @@ func convertDefs(r *API, i *parser.Interface) {
 }
 
 func convertRenderMethod(m *parser.Method) *Method {
-
 	r := &Method{
 		Name:    m.Name,
 		Request: convertRenderMethodRequest(m),
