@@ -4,14 +4,14 @@ import (
 	"github.com/spf13/cobra"
 )
 
-var GenerateCmd = &cobra.Command{
+var Cmd = &cobra.Command{
 	Use:   "generate",
-	Short: "生成 RPC Client、API SDK",
+	Short: "generate RPC client、API SDK",
 	Long:  ``,
 }
 
 func init() {
-	GenerateCmd.AddCommand(
+	Cmd.AddCommand(
 		clientCmd,
 		openapiCmd,
 		sdkCmd,

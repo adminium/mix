@@ -10,7 +10,7 @@ type Warning = jsonrpc.Warning
 
 var _ error = (*Warning)(nil)
 
-func Wranf(format string, a ...any) *Warning {
+func Warnf(format string, a ...any) *Warning {
 	return &Warning{
 		Message: fmt.Sprintf(format, a...),
 	}
