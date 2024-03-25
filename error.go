@@ -6,6 +6,8 @@ import (
 	"github.com/adminium/jsonrpc"
 )
 
+type Error = jsonrpc.Error
+
 type Warning = jsonrpc.Warning
 
 var _ error = (*Warning)(nil)
