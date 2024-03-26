@@ -20,8 +20,8 @@ var rootCmd = &cobra.Command{
 		DisableDescriptions: false,
 		HiddenDefaultCmd:    true,
 	},
-
-	Short: "Mix 实用命令行工具",
+	Version: "0.1.1",
+	Short:   "Mix 实用命令行工具",
 	Long: `功能：
   * 项目初始化
   * 生成 RPC Client
