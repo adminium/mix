@@ -72,16 +72,70 @@ curl --location --request POST '127.0.0.1:1332/rpc/v1/' \
 }'
 ```
 
-## API Methods and Parameters
+## Server
+
+```go
+// Have a type with some exported methods
+type SimpleServerHandler struct {
+    n int
+}
+
+func (h *SimpleServerHandler) AddGet(in int) int {
+    h.n += in
+    return h.n
+}
+
+func main() {
+    // create a new server instance
+    rpcServer := jsonrpc.NewServer()
+    
+    // create a handler instance and register it
+    serverHandler := &SimpleServerHandler{}
+    rpcServer.Register("SimpleServerHandler", serverHandler)
+    
+    // rpcServer is now http.Handler which will serve jsonrpc calls to SimpleServerHandler.AddGet
+    // a method with a single int param, and an int response. The server supports both http and websockets.
+    
+    // serve the api
+    testServ := httptest.NewServer(rpcServer)
+    defer testServ.Close()
+	
+    fmt.Println("URL: ", "ws://"+testServ.Listener.Addr().String())
+    
+    [..do other app stuff / wait..]
+}
+```
+
+## Client
+
+```go
+func start() error {
+    // Create a struct where each field is an exported function with signatures matching rpc calls
+    var client struct {
+        AddGet      func(int) int
+    }
+	
+	// Make jsonrp populate func fields in the struct with JSONRPC calls
+    closer, err := jsonrpc.NewClient(context.Background(), rpcURL, "SimpleServerHandler", &client, nil)
+    if err != nil {
+    	return err
+    }
+    defer closer()
+    
+    ...
+    
+    n := client.AddGet(10)
+    // if the server is the one from the example above, n = 10
+
+    n := client.AddGet(2)
+    // if the server is the one from the example above, n = 12
+}
+```
+
+## Supported function signatures
 For the registered Struct objects, JSONRPC will scan their exported methods. 
 For the exported methods that conform to the interface method format, 
-JSONRPC will automatically proxy the API routing to execute this method. The format is as follows:
-
-```
-[prefix]/MehtodName
-```
-
-Supported function signatures:
+JSONRPC will automatically proxy the API routing to execute this method. 
 
 ```go
 type API interface {
