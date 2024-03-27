@@ -129,7 +129,7 @@ func (i *Interface) addImport(imt *Import) {
 	i.Imports = append(i.Imports, imt)
 }
 
-func (i Interface) parseNames(idents []*ast.Ident) []string {
+func (i *Interface) parseNames(idents []*ast.Ident) []string {
 	names := make([]string, 0)
 	for _, i := range idents {
 		names = append(names, i.Name)
